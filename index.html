@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+  <!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>视频示例</title>
+    <meta name="description" content="" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/dplayer@1.25.0/dist/DPlayer.min.css"
+    />
+    <style>
+       .player_box{
+         width: 500px;
+         height: 400px;
+         margin: 0 auto;
+         position: relative;
+       }
+    </style>
+  </head>
+  <body>
+    <!-- 低版本浏览器提示 -->
+    <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
+    <!-- 正文开始 -->
+    <div class="player_box">
+      <div id="dplayer"></div>
+      <button class='next_btn' onclick="nextPlayer()">下一个</button>
+    </div>
+    <script src="https://unpkg.com/dplayer@1.25.0/dist/DPlayer.min.js"></script>
+    <!-- <script src="./dist/bound.js"></script> -->
+    <script>
+      const dp = new DPlayer({
+        container: document.getElementById('dplayer'), // 播放器容器
+        theme: '#E9709B', //  主题色
+        //screenshot: true, // 是否开启截图
+        //lang: 可选值: 'en', 'zh-cn', 'zh-tw'  默认系统语言
+        video:[ {
+            url: 'http://clappr.io/highline.mp4',
+            pic: '', // 封面
+            thumbnails: '' // 缩略图
+        }],
+        highlight: [ // 自定义进度条提示点
+          {
+              time: 20,
+              text: '这是第 20 秒'
+          },
+          {
+              time: 120,
+              text: '这是 2 分钟'
+          }
+        ],
+        contextmenu: [] // 自定义右键菜单],
+      });
+
+      function nextPlayer(){
+        dp.switchVideo({
+            url: 'http://www.jplayer.org/video/m4v/Incredibles_Teaser.m4v',
+            pic: '',
+            thumbnails: ''
+        });
+      }
+    </script>
+  </body>
+</html>
