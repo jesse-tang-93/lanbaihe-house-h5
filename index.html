@@ -29,10 +29,10 @@
     <div class='top-tips-nav layui-clear'>
       <div class="hello-text fl"> 欢迎来到兰百合家政～</div>
       <ul class="layui-nav tip-nav fr" lay-filter="">
-        <li class="layui-nav-item"><a href="">网站地图</a></li>
-        <li class="layui-nav-item"><a href="">收藏本站</a></li>
-        <li class="layui-nav-item"><a href="">在线留言</a></li>
-        <li class="layui-nav-item end-item"><a href="">联系我们</a></li>
+        <li class="layui-nav-item" lay-unselect><a href="">网站地图</a></li>
+        <li class="layui-nav-item" lay-unselect><a href="">收藏本站</a></li>
+        <li class="layui-nav-item" lay-unselect><a href="">在线留言</a></li>
+        <li class="layui-nav-item end-item" lay-unselect><a href="">联系我们</a></li>
       </ul>
     </div> <!-- end-top-nav -->
     <hr class="top-line">
@@ -56,24 +56,24 @@
     </div>
     <!-- nav -->
     <ul class="layui-nav nav-box" lay-filter="">
-      <li class="layui-nav-item active"><a href="">首页</a></li>
-      <li class="layui-nav-item"><a href="">服务内容</a></li>
-      <li class="layui-nav-item"><a href="">培训项目</a></li>
-      <li class="layui-nav-item">
+      <li class="layui-nav-item active" lay-unselect><a href="">首页</a></li>
+      <li class="layui-nav-item" lay-unselect><a href="">服务内容</a></li>
+      <li class="layui-nav-item" lay-unselect><a href="">培训项目</a></li>
+      <li class="layui-nav-item" lay-unselect>
         <a href="javascript:;">教学视频</a>
       </li>
-      <li class="layui-nav-item"><a href="">师资力量</a></li>
-      <li class="layui-nav-item"><a href="">学员风采</a></li>
-      <li class="layui-nav-item end-item"><a href="">关于我们</a></li>
+      <li class="layui-nav-item" lay-unselect><a href="">师资力量</a></li>
+      <li class="layui-nav-item" lay-unselect><a href="">学员风采</a></li>
+      <li class="layui-nav-item end-item" lay-unselect><a href="">关于我们</a></li>
 
     </ul>
   </div><!-- end top-->
   <div class="container">
     <div class="layui-carousel" id="carousel">
       <div carousel-item>
+        <div><img src="./images/banner.jpg" alt=""></div>
         <div><img src="https://hbimg.huabanimg.com/cb998b59e4024cf386cd1406ec1b69b898d66e4e5a1d3-311acb_fw658" alt=""
             style="width:100%;object-fit:cover;"></div>
-        <div><img src="https://res.layui.com/images/layui/demo/1.png" alt=""></div>
         <div>条目3</div>
         <div>条目4</div>
         <div>条目5</div>
@@ -164,35 +164,37 @@
           <li>高端家政服务</li>
         </ul>
         <div class="layui-tab-content">
+          <!-- 母婴服务 -->
           <div class="layui-tab-item item-box ">
             <div class="server-item-info">
-              <img src="./images/server-1.png" alt="">
+              <img src="./images/server-4.jpg" alt="">
               <div class='server-item-blank'>
-                <p class="title">护工</p>
+                <p class="title">月嫂服务</p>
                 <p class="server-info-text">
-                  24种专业技能、统一培训、医院实习、规范化管理、专业照顾病人/老人。
+                  32种专业技能、星级月子餐、统一培训、规范化管理、技能专业、性格和善。
                 </p>
               </div>
             </div>
             <div class="server-item-info">
-              <img src="./images/server-2.jpg" alt="">
+              <img src="./images/server-5.jpg" alt="">
               <div class='server-item-blank'>
-                <p class="title">保洁</p>
+                <p class="title">育婴师</p>
                 <p class="server-info-text">
-                  全屋6区40项打扫、统一培训、专业稳定、标准工序、追求细节。
+                  32种专业技能、辅食制作、早教游戏、统一培训、规范管理、技能专业。
                 </p>
               </div>
             </div>
             <div class="server-item-info">
-              <img src="./images/server-3.jpg" alt="">
+              <img src="./images/server-6.png" alt="">
               <div class='server-item-blank'>
-                <p class="title">保姆</p>
+                <p class="title">催乳师</p>
                 <p class="server-info-text">
-                  家务精细、做饭好吃、不满意随时更换。
+                  24种专业手法、解决12大催乳问题、技能专业。
                 </p>
               </div>
             </div>
           </div>
+          <!-- 家政服务 -->
           <div class="layui-tab-item item-box layui-show">
             <div class="server-item-info">
               <img src="./images/server-1.png" alt="">
@@ -222,31 +224,32 @@
               </div>
             </div>
           </div>
+          <!-- 高端家政服务 -->
           <div class="layui-tab-item item-box">
             <div class="server-item-info">
-              <img src="./images/server-1.png" alt="">
+              <img src="./images/server-7.jpg" alt="">
               <div class='server-item-blank'>
-                <p class="title">护工</p>
+                <p class="title">全屋整理</p>
                 <p class="server-info-text">
-                  24种专业技能、统一培训、医院实习、规范化管理、专业照顾病人/老人。
+                  23种专业技能、收纳空间规划、酒店式服务、专业收纳工具。
                 </p>
               </div>
             </div>
             <div class="server-item-info">
-              <img src="./images/server-2.jpg" alt="">
+              <img src="./images/server-8.jpg" alt="">
               <div class='server-item-blank'>
-                <p class="title">保洁</p>
+                <p class="title">私人订制</p>
                 <p class="server-info-text">
-                  全屋6区40项打扫、统一培训、专业稳定、标准工序、追求细节。
+                  根据客户喜好、量身打造服务方案、精细服务。
                 </p>
               </div>
             </div>
             <div class="server-item-info">
-              <img src="./images/server-3.jpg" alt="">
+              <img src="./images/server-9.png" alt="">
               <div class='server-item-blank'>
-                <p class="title">保姆</p>
+                <p class="title">涉外家政</p>
                 <p class="server-info-text">
-                  家务精细、做饭好吃、不满意随时更换。
+                  提供出国保姆、月嫂、育婴师一站式服务、真心真情、专心专业。
                 </p>
               </div>
             </div>
@@ -254,12 +257,185 @@
         </div>
       </div>
     </div>
+    <!-- video-box -->
+    <div class="video-box">
+      <img src="./images/video-title.png" alt="" class="project-title">
+      <div class="video-content-box">
+        <div class="video-container">
+          <video src="https://video.mukewang.com/mk.mp4" controls="controls" width="824px" height='510px'>
+            your browser does not support the video tag
+          </video>
+        </div>
+        <div class="video-list">
+          <div class="video-list-title">
+            <p class="title">视频介绍</p>
+            <p class='title-text'>
+              兰百合月嫂培训实录，会有可的是 能吗？也许，现在不可能回答。如 我也许知道更多。
+            </p>
+          </div>
+          <div class="video-item-box">
+            <div class="video-item active">
+              <img src="./images/video-item.png" alt="">
+              <p>兰百合月嫂 培训</p>
+            </div>
+            <div class="video-item">
+              <img src="./images/video-item.png" alt="">
+              <p>兰百合保姆 培训实录</p>
+            </div>
+            <div class="video-item">
+              <img src="./images/video-item.png" alt="">
+              <p>兰百合家政 培训实录</p>
+            </div>
+            <div class="video-item">
+              <img src="./images/video-item.png" alt="">
+              <p>兰百合育婴 师培训实录</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- teacher-box -->
+    <div class="teacher-box">
+      <img src="./images/teacher-title.png" alt="" class="project-title">
+      <div class="teacher-content">
+        <div class='teacher-item'>
+          <img src="./images/teacher.png" alt="">
+          <div class="teacher-info">
+            <p class="t-name">兰老师</p>
+            <p class="t-text">
+              1989年12月13日出生于美国宾夕法尼亚州，美国流行音乐、乡村音乐创作型女歌手、音乐制作人、演员、慈善家。是2009认证7倍
+            </p>
+            <div class="t-btn">了解更多</div>
+          </div>
+        </div>
+        <div class='teacher-item'>
+          <img src="./images/teacher.png" alt="">
+          <div class="teacher-info">
+            <p class="t-name">兰老师</p>
+            <p class="t-text">
+              1989年12月13日出生于美国宾夕法尼亚州，美国流行音乐、乡村音乐创作型女歌手、音乐制作人、演员、慈善家。是2009认证7倍
+            </p>
+            <div class="t-btn">了解更多</div>
+          </div>
+        </div>
+        <div class='teacher-item'>
+          <img src="./images/teacher.png" alt="">
+          <div class="teacher-info">
+            <p class="t-name">兰老师</p>
+            <p class="t-text">
+              1989年12月13日出生于美国宾夕法尼亚州，美国流行音乐、乡村音乐创作型女歌手、音乐制作人、演员、慈善家。是2009认证7倍
+            </p>
+            <div class="t-btn">了解更多</div>
+          </div>
+        </div>
+        <div class='teacher-item'>
+          <img src="./images/teacher.png" alt="">
+          <div class="teacher-info">
+            <p class="t-name">兰老师</p>
+            <p class="t-text">
+              1989年12月13日出生于美国宾夕法尼亚州，美国流行音乐、乡村音乐创作型女歌手、音乐制作人、演员、慈善家。是2009认证7倍
+            </p>
+            <div class="t-btn">了解更多</div>
+          </div>
+        </div>
+        <div class='teacher-item'>
+          <img src="./images/teacher.png" alt="">
+          <div class="teacher-info">
+            <p class="t-name">兰老师</p>
+            <p class="t-text">
+              1989年12月13日出生于美国宾夕法尼亚州，美国流行音乐、乡村音乐创作型女歌手、音乐制作人、演员、慈善家。是2009认证7倍
+            </p>
+            <div class="t-btn">了解更多</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- student-box -->
+    <div class="student-box">
+      <img src="./images/student-title.png" alt="" class="project-title">
+      <div class="student-content">
+        <div class="student-item">
+          <div class="student-card">
+            <img class='student-head' src="./images/teacher.png" alt="">
+            <div class="student-info">
+              <p class="student-name">王大丽</p>
+              <p class="student-text">年龄45岁，籍贯宁乡2018年在长沙兰百合学习月嫂育婴师课程，得到数次客户好评，目前薪资4500</p>
+            </div>
+          </div>
+          <div class="out-bg">
+            <p>参加护工培训</p>
+          </div>
+        </div>
+        <div class="student-item">
+          <div class="student-card">
+            <img class='student-head' src="./images/teacher.png" alt="">
+            <div class="student-info">
+              <p class="student-name">王大丽</p>
+              <p class="student-text">年龄45岁，籍贯宁乡2018年在长沙兰百合学习月嫂育婴师课程，得到数次客户好评，目前薪资4500</p>
+            </div>
+          </div>
+          <div class="out-bg">
+            <p>参加月嫂培训</p>
+          </div>
+        </div>
+        <div class="student-item">
+          <div class="student-card">
+            <img class='student-head' src="./images/teacher.png" alt="">
+            <div class="student-info">
+              <p class="student-name">王大丽</p>
+              <p class="student-text">年龄45岁，籍贯宁乡2018年在长沙兰百合学习月嫂育婴师课程，得到数次客户好评，目前薪资4500</p>
+            </div>
+          </div>
+          <div class="out-bg">
+            <p>参加育婴师培训</p>
+          </div>
+        </div>
+        <div class="student-item">
+          <div class="student-card">
+            <img class='student-head' src="./images/teacher.png" alt="">
+            <div class="student-info">
+              <p class="student-name">王大丽</p>
+              <p class="student-text">年龄45岁，籍贯宁乡2018年在长沙兰百合学习月嫂育婴师课程，得到数次客户好评，目前薪资4500</p>
+            </div>
+          </div>
+          <div class="out-bg">
+            <p>参加保姆培训</p>
+          </div>
+        </div>
+        <div class="student-item">
+          <div class="student-card">
+            <img class='student-head' src="./images/teacher.png" alt="">
+            <div class="student-info">
+              <p class="student-name">王大丽</p>
+              <p class="student-text">年龄45岁，籍贯宁乡2018年在长沙兰百合学习月嫂育婴师课程，得到数次客户好评，目前薪资4500</p>
+            </div>
+          </div>
+          <div class="out-bg">
+            <p>参加保洁培训</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
+  <!-- footer -->
+  <footer>
+    <img src="./images/bottom-title.png" alt="" class="bottom-title">
+    <p>版权所有©：长沙兰百合科技服务有限公司</p>
+    <div class="bottom-nav">
+      <span class="layui-breadcrumb" lay-separator="|">
+        <a href="">找寻服务乐</a>
+        <a href="">联系我们</a>
+        <a href="">加盟咨询</a>
+      </span>
+    </div>
+  </footer>
   <script src="./layui/layui.js"></script>
   <script>
-    layui.use(['element', 'carousel'], function () {
+    layui.use(['element', 'carousel', 'jquery'], function () {
       var carousel = layui.carousel,
-        element = layui.element;
+        element = layui.element,
+        $ = layui.$
+
       //建造实例
       carousel.render({
         elem: '#carousel'
@@ -267,6 +443,12 @@
         , arrow: 'hover', //始终显示箭头
         height: '600px'
         //,anim: 'updown' //切换动画方式
+      });
+
+      $(".teacher-item").hover(function () {
+        $(this).find('.teacher-info').addClass("layui-anim layui-anim-upbit");
+      }, function () {
+        $(this).find('.teacher-info').removeClass("layui-anim layui-anim-upbit");
       });
     });
   </script>

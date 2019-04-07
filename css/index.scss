@@ -16,7 +16,7 @@ body{
    top:0;
    left:0;
    right:0;
-   z-index: 2;
+   z-index: 5;
    background-color: $cff;
   .top-tips-nav{
     max-width: 1366px;
@@ -250,6 +250,7 @@ body{
 // server porject
 .server-box{
   padding-top: 80px;
+  padding-bottom: 70px;
   .project-title{
     margin: 0 auto;
     width: 400px;
@@ -332,3 +333,266 @@ body{
     }
   }
 }
+// video-box
+.video-box{
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color:#f6f7f8;
+  .project-title{
+    margin: 0 auto;
+    width: 400px;
+    height: 107px;
+    display: block;
+    padding-bottom: 58px;
+  }
+  .video-content-box{
+    margin: 0 auto;
+    width:1099px;
+    height:530px;
+    background:rgba(255,255,255,1);
+    box-shadow:0px 6px 20px 0px rgba(222,222,222,0.4);
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 0;
+    .video-container{
+      width: 824px;
+      height: 510px;
+      display: inline-block;
+    }
+    .video-list{
+      display: inline-block;
+      width: 240px;
+      vertical-align: top;
+      margin-left: 12px;
+      .video-list-title{
+        border-bottom: 1px solid $main-color;
+        padding-bottom: 11px;
+        box-sizing: border-box;
+      }
+      .title{
+        font-size: 20px;
+        color: #111;
+        margin-bottom: 5px;
+      }
+      .title-text{
+        font-size:16px;
+        font-family:PingFangSC-Medium;
+        font-weight:500;
+        color:#555;
+        line-height:26px;
+      }
+      .video-item-box{
+        line-height:30px;
+        color: #333;
+        padding-top: 10px;
+        box-sizing: border-box;
+        .video-item{
+          font-size: 0;
+          margin-bottom: 10px;
+          &.active img{
+            border: 1px solid #E9709B;
+            box-sizing: border-box;
+          }
+          img{
+            object-fit: cover;
+            display: inline-block;
+            width: 152px;
+            height:88px;
+            margin-right: 8px;
+          }
+          p{
+            width: 80px;
+            display: inline-block;
+            font-size: 16px;
+            vertical-align: middle;
+            color: #333;
+          }
+          &:last-child{
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+}
+// teacher
+.teacher-box{
+  padding-top: 80px;
+  .project-title{
+    margin: 0 auto;
+    width: 400px;
+    height: 107px;
+    display: block;
+    padding-bottom: 50px;
+  }
+  .teacher-content{
+    font-size: 0;
+    text-align: center;
+    padding-bottom: 140px;
+    .teacher-item{
+      width: 200px;
+      height: 300px;
+      margin-right: 22px;
+      position: relative;
+      overflow: hidden;
+      display: inline-block;
+      &:hover  .teacher-info{
+        top:0;
+      }
+      &:nth-of-type(even){
+        position: relative;
+        top:70px;
+      }
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+      &:last-child{
+        margin-right: 0;
+      }
+      .teacher-info{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top:240px;
+        left: 0;
+        right: 0;
+        text-align: center;
+        background-color: rgba(0,0,0,.6);
+        .t-name{
+          font-size:22px;
+          font-family:PingFangSC-Regular;
+          font-weight:400;
+          color:rgba(255,255,255,1);
+          padding: 20px 0 18px;
+        }
+        .t-text{
+          font-size:16px;
+          font-family:PingFangSC-Regular;
+          font-weight:400;
+          color:rgba(255,255,255,1);
+          padding: 0 14px;
+          margin-bottom: 30px;
+          text-align: left;
+        }
+        .t-btn{
+          width:120px;
+          line-height:32px;
+          border:1px solid rgba(255,255,255,1);
+          border-radius:16px;
+          color: #fff;
+          font-size: 16px;
+          margin: 0 auto;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+// student -box 
+.student-box{
+  padding-top: 80px;
+  padding-bottom: 50px;
+  background-color: #f6f7f8;
+  .project-title{
+    margin: 0 auto;
+    width: 400px;
+    height: 107px;
+    display: block;
+    padding-bottom: 211px;
+  }
+  .student-content{
+    font-size: 0;
+    text-align: center;
+    .student-item{
+      box-shadow: 0px -4px 20px 0px rgba(239,239,239,0.6), 0px 4px 10px 0px rgba(222,222,222,0.8);
+      height: 170px;
+      width: 230px;
+      margin-right: 20px;
+      display: inline-block;
+      background-color: #F0F0F0;
+      padding: 7px 15px 0;
+      box-sizing: border-box;
+      position: relative;
+      &:hover .student-card{
+        bottom: 100px;
+        transition: all .5s;
+      }
+      .out-bg{
+        position: absolute;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        z-index: 3;
+        background: url('../images/user-bg.png') bottom no-repeat;
+        background-size: contain;
+        width: 230px;
+        height: 109px;
+        padding-top: 56px;
+        box-sizing: border-box;
+        p{
+          color: $main-color;
+          font-size: 20px;
+          text-align: center;
+        }
+      }
+      .student-card{
+        box-shadow: 0px 4px 10px 0px rgba(222,222,222,0.8);
+        position: absolute;
+        right: 15px;
+        left: 15px;
+        bottom: 0;
+        transition: all .5s;
+        .student-head{
+          width: 65px;
+          height: 65px;
+          border-radius: 50%;
+          border: 2px solid #E9709B;
+          box-sizing: border-box;
+          position: absolute;
+          left: 50%;
+          top:-40px;
+          transform: translateX(-50%);
+        }
+        .student-info{
+          padding: 48px 12px 0;
+          box-sizing: border-box;
+          text-align: center;
+          background-color: #f7f7f7;
+          .student-name{
+            color: #333333;
+            font-size: 20px;
+            margin-bottom: 14px;
+          }
+          .student-text{
+            font-size: 16px;
+            color: #666;
+          }
+        }
+      }
+      &:last-child{
+        margin-right: 0;
+      }
+    }
+  }
+}
+// footer
+ footer{
+   padding-top: 60px;
+   text-align: center;
+   padding-bottom: 60px;
+   .bottom-title{
+     margin: 0 auto;
+     display: block;
+     width: 357px;
+     height: 198px;
+     object-fit: contain;
+   }
+   p{
+     margin: 50px auto 10px;
+   }
+   p,.bottom-nav span a{
+     color: #aaa;
+   }
+ }
