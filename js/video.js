@@ -1,4 +1,4 @@
-var videoArr = ['http://www.jplayer.org/video/webm/Finding_Nemo_Teaser.webm','http://img.ksbbs.com/asset/Mon_1703/05cacb4e02f9d9e.mp4','https://video.mukewang.com/mk.mp4']
+var videoArr = ['http://www.jplayer.org/video/webm/Finding_Nemo_Teaser.webm','http://www.jq22.com/demo/johndyer-mediaelement-53ab0f8-150605001031/media/echo-hereweare.mp4','https://video.mukewang.com/mk.mp4']
 var videoIndex = 0
 // 首页视频播放器
 var videoObject = {

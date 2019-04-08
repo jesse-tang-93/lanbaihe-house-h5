@@ -485,6 +485,11 @@ body{
           font-size: 16px;
           margin: 0 auto;
           cursor: pointer;
+          transition: all .5s;
+          &:hover{
+            background-color: $main-color;
+            transition: all .5s;
+          }
         }
       }
     }
@@ -516,8 +521,13 @@ body{
       box-sizing: border-box;
       position: relative;
       &:hover .student-card{
-        bottom: 100px;
+        top: -70%;
         transition: all .5s;
+      }
+      &:hover .student-card .student-info{
+        -webkit-transition: all 1s ease-in 1s;
+        transition: all 1s ease-in 1s;
+        height:auto;
       }
       .out-bg{
         position: absolute;
@@ -525,7 +535,7 @@ body{
         left: 0;
         bottom: 0;
         z-index: 3;
-        background: url('../images/user-bg.png') bottom no-repeat;
+        background: url('../images/user-bg2.png') bottom no-repeat;
         background-size: contain;
         width: 230px;
         height: 109px;
@@ -542,8 +552,11 @@ body{
         position: absolute;
         right: 15px;
         left: 15px;
-        bottom: 0;
+        top: 7px;
         transition: all .5s;
+        padding-bottom: 40px;
+        box-sizing: border-box;
+        background-color: #f7f7f7;
         .student-head{
           width: 65px;
           height: 65px;
@@ -556,10 +569,14 @@ body{
           transform: translateX(-50%);
         }
         .student-info{
+          -webkit-transition: all 1s ease-in 1s;
+          transition: all 1s ease-in 1s;
           padding: 48px 12px 0;
           box-sizing: border-box;
           text-align: center;
           background-color: #f7f7f7;
+          height: 100px;
+          overflow: hidden;
           .student-name{
             color: #333333;
             font-size: 20px;

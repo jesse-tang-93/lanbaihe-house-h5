@@ -15,7 +15,7 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 999;
+  z-index: 5;
   background-color: #ffffff;
 }
 
@@ -423,7 +423,7 @@ body {
 
 .video-box .video-content-box .video-list .video-list-title {
   border-bottom: 1px solid #7F2974;
-  padding-bottom: 6px;
+  padding-bottom: 11px;
   box-sizing: border-box;
 }
 
@@ -562,6 +562,12 @@ body {
   font-size: 16px;
   margin: 0 auto;
   cursor: pointer;
+  transition: all .5s;
+}
+
+.teacher-box .teacher-content .teacher-item .teacher-info .t-btn:hover {
+  background-color: #7F2974;
+  transition: all .5s;
 }
 
 .student-box {
@@ -596,8 +602,14 @@ body {
 }
 
 .student-box .student-content .student-item:hover .student-card {
-  bottom: 100px;
+  top: -70%;
   transition: all .5s;
+}
+
+.student-box .student-content .student-item:hover .student-card .student-info {
+  -webkit-transition: all 1s ease-in 1s;
+  transition: all 1s ease-in 1s;
+  height: auto;
 }
 
 .student-box .student-content .student-item .out-bg {
@@ -606,7 +618,7 @@ body {
   left: 0;
   bottom: 0;
   z-index: 3;
-  background: url("../images/user-bg.png") bottom no-repeat;
+  background: url("../images/user-bg2.png") bottom no-repeat;
   background-size: contain;
   width: 230px;
   height: 109px;
@@ -625,8 +637,11 @@ body {
   position: absolute;
   right: 15px;
   left: 15px;
-  bottom: 0;
+  top: 7px;
   transition: all .5s;
+  padding-bottom: 40px;
+  box-sizing: border-box;
+  background-color: #f7f7f7;
 }
 
 .student-box .student-content .student-item .student-card .student-head {
@@ -642,10 +657,14 @@ body {
 }
 
 .student-box .student-content .student-item .student-card .student-info {
+  -webkit-transition: all 1s ease-in 1s;
+  transition: all 1s ease-in 1s;
   padding: 48px 12px 0;
   box-sizing: border-box;
   text-align: center;
   background-color: #f7f7f7;
+  height: 100px;
+  overflow: hidden;
 }
 
 .student-box .student-content .student-item .student-card .student-info .student-name {
