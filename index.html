@@ -261,10 +261,7 @@
     <div class="video-box">
       <img src="./images/video-title.png" alt="" class="project-title">
       <div class="video-content-box">
-        <div class="video-container">
-          <video src="https://video.mukewang.com/mk.mp4" controls="controls" width="824px" height='510px'>
-            your browser does not support the video tag
-          </video>
+        <div class="video-container" id='video'>
         </div>
         <div class="video-list">
           <div class="video-list-title">
@@ -430,6 +427,7 @@
     </div>
   </footer>
   <script src="./layui/layui.js"></script>
+  <script type="text/javascript" src="./ckplayer/ckplayer.js"></script>
   <script>
     layui.use(['element', 'carousel', 'jquery'], function () {
       var carousel = layui.carousel,
@@ -452,6 +450,7 @@
       });
     });
   </script>
+  <script src='./js/video.js'></script>
 </body>
 
 </html>
