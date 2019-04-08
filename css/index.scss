@@ -487,7 +487,8 @@ body{
           cursor: pointer;
           transition: all .5s;
           &:hover{
-            background-color: $main-color;
+            background-color:#fff;
+            color:#333;
             transition: all .5s;
           }
         }

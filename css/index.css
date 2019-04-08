@@ -566,7 +566,8 @@ body {
 }
 
 .teacher-box .teacher-content .teacher-item .teacher-info .t-btn:hover {
-  background-color: #7F2974;
+  background-color: #fff;
+  color: #333;
   transition: all .5s;
 }
 

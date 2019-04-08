@@ -1,8 +1,7 @@
-var videoArr = ['http://www.jplayer.org/video/webm/Finding_Nemo_Teaser.webm','http://www.jq22.com/demo/johndyer-mediaelement-53ab0f8-150605001031/media/echo-hereweare.mp4','https://video.mukewang.com/mk.mp4']
+var videoArr = ['http://demo.htmleaf.com/1711/201711141522/media/240.mp4','http://demo.htmleaf.com/1810/201810171450/ckin.mp4','https://video.mukewang.com/mk.mp4']
 var videoIndex = 0
 // 首页视频播放器
 var videoObject = {
-  front:'toLast',
   next:'toNext',
   container: '#video', //容器的ID或className
   variable: 'player',//播放函数名称
@@ -11,10 +10,10 @@ var videoObject = {
   
 };
 var player = new ckplayer(videoObject);
+// 下一个
 function toNext(){
   if(videoIndex<videoArr.length-1){
     videoIndex ++
-    alert( videoIndex)
     if(videoIndex===videoArr.length-1){ // 最后一个
       player.newVideo({
         front:'toLast',
@@ -33,16 +32,23 @@ function toNext(){
     alert('没有下一集了')
   }
 }
+// 上一个
 function toLast(){
-  if(videoIndex>0){
-    videoIndex --
-    player.newVideo({
-      front:'toLast',
-      next:'toNext',
-      autoplay:true,
-      video:videoArr[videoIndex]
-    }); 
-  }else if(videoIndex === 0){
-    alert('已经是第一个了')
+  if(videoIndex>=1){
+    videoIndex -- 
+    if(videoIndex===0){ // 第一个
+      player.newVideo({
+        next:'toNext',
+        autoplay:true,
+        video:videoArr[videoIndex]
+      }); 
+    }else{
+      player.newVideo({
+        front:'toLast',
+        next:'toNext',
+        autoplay:true,
+        video:videoArr[videoIndex]
+      });
+    }
   }
 }
