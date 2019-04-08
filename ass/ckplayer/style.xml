@@ -2,7 +2,7 @@
 <ckplayer>
 	<!--播放器全局背景设置，支持设置背景颜色，背景图片，以及背景透明度-->
 	<background>
-		<backgroundColor>0x000000</backgroundColor><!--背景颜色-->
+		<backgroundColor>0xFF6461</backgroundColor><!--背景颜色-->
 		<backgroundImg></backgroundImg><!--背景图片-->
 		<alpha>0.5</alpha><!--背景透明度-->
 		<stretched>3</stretched><!--拉伸方式，0=原始大小，1=自动缩放，2=只有当元件的宽或高大于播放器宽高时才进行缩放，3=参考播放器宽高，4=宽度参考播放器宽、高度自动，5=高度参考播放器高、宽度自动-->
@@ -41,7 +41,7 @@
 		</hideControlBar>
 		<!--控制栏背景-->
 		<background>
-			<backgroundColor>0x000000</backgroundColor><!--背景颜色-->
+			<backgroundColor>0x#FF6461</backgroundColor><!--背景颜色-->
 			<backgroundImg></backgroundImg><!--背景图片-->
 			<alpha>0.6</alpha><!--背景透明度-->
 		</background>
@@ -121,11 +121,11 @@
 		<!--清晰度组件样式-->
 		<definition>
 			<defaultButton><!--控制栏上的按钮样式-->
-				<backgroundColor>0x333333</backgroundColor><!--背景颜色-->
-				<overBackgroundColor>0x0787FF</overBackgroundColor><!--鼠标经过时背景颜色-->
+				<backgroundColor>0xFF6461</backgroundColor><!--背景颜色-->
+				<overBackgroundColor>0xFF6461</overBackgroundColor><!--鼠标经过时背景颜色-->
 				<backgroundAlpha>0.8</backgroundAlpha>
 				<border>0</border>
-				<borderColor>0x333333</borderColor>
+				<borderColor>0xFF6461</borderColor>
 				<radius>6</radius>
 				<width>70</width>
 				<height>27</height>
@@ -133,8 +133,8 @@
 				<padding>5</padding><!--只在左对齐和右对齐时有效，如左对齐时则表示离左边的距离-->
 				<size>14</size><!--字体大小-->
 				<font>Microsoft YaHei,\5FAE\8F6F\96C5\9ED1,微软雅黑</font><!--字体-->
-				<textColor>0xFFFFFF</textColor><!--字体颜色-->
-				<overTextColor>0xFFFFFF</overTextColor><!--字体颜色-->
+				<textColor>0xFF6461</textColor><!--字体颜色-->
+				<overTextColor>0xFF6461</overTextColor><!--字体颜色-->
 				<bold>false</bold><!--是否为粗体-->
 				<alpha>1</alpha><!--文字透明度-->
 			</defaultButton>
@@ -150,7 +150,7 @@
 				<paddingBottom>10</paddingBottom>
 				<triangleWidth>15</triangleWidth><!--倒三角的顶部宽-->
 				<triangleHeight>10</triangleHeight><!--倒三角的中线高-->
-				<triangleBackgroundColor>0x333333</triangleBackgroundColor><!--倒三角的背景色-->
+				<triangleBackgroundColor>0xFF6461</triangleBackgroundColor><!--倒三角的背景色-->
 				<triangleBorder>0</triangleBorder><!--倒三角的边框粗细-->
 				<triangleBorderColor>0xFFFFFF</triangleBorderColor><!--倒三角的边框颜色-->
 				<triangleAlpha>0.8</triangleAlpha><!--倒三角的透明度-->
@@ -158,7 +158,7 @@
 				<triangleDeviationY>0</triangleDeviationY><!--倒三角默认是在提示框下方的，这里可以使之在垂直方向进行偏移-->
 			</background>
 			<button><!--列表按钮普通样式-->
-				<backgroundColor>0x333333</backgroundColor><!--背景颜色-->
+				<backgroundColor>0xFF6461</backgroundColor><!--背景颜色-->
 				<overBackgroundColor>0x0787FF</overBackgroundColor><!--鼠标经过时背景颜色-->
 				<backgroundAlpha>0.8</backgroundAlpha>
 				<border>0</border>
@@ -176,7 +176,7 @@
 				<alpha>1</alpha><!--文字透明度-->
 			</button>
 			<buttonHighlight><!--列表按钮高亮样式-->
-				<backgroundColor>0x005CB2</backgroundColor><!--背景颜色-->
+				<backgroundColor>0xFF6461</backgroundColor><!--背景颜色-->
 				<overBackgroundColor>0x0787FF</overBackgroundColor><!--鼠标经过时背景颜色-->
 				<backgroundAlpha>0.8</backgroundAlpha>
 				<border>0</border>
@@ -220,11 +220,11 @@
 		<!--多字幕切换组件样式-->
 		<subtitle>
 			<defaultButton><!--控制栏上的按钮样式-->
-				<backgroundColor>0x333333</backgroundColor><!--背景颜色-->
+				<backgroundColor>0xFF6461</backgroundColor><!--背景颜色-->
 				<overBackgroundColor>0x0787FF</overBackgroundColor><!--鼠标经过时背景颜色-->
 				<backgroundAlpha>0.8</backgroundAlpha>
 				<border>0</border>
-				<borderColor>0x333333</borderColor>
+				<borderColor>0xFF6461</borderColor>
 				<radius>6</radius>
 				<width>70</width>
 				<height>27</height>
@@ -238,10 +238,10 @@
 				<alpha>1</alpha><!--文字透明度-->
 			</defaultButton>
 			<background><!--清晰度按钮列表的背景-->
-				<backgroundColor>0x333333</backgroundColor>
+				<backgroundColor>0xFF6461</backgroundColor>
 				<backgroundAlpha>0.8</backgroundAlpha>
 				<border>0</border>
-				<borderColor>0x333333</borderColor>
+				<borderColor>0xFF6461</borderColor>
 				<radius>10</radius>
 				<paddingLeft>15</paddingLeft>
 				<paddingTop>10</paddingTop>
@@ -249,7 +249,7 @@
 				<paddingBottom>10</paddingBottom>
 				<triangleWidth>15</triangleWidth><!--倒三角的顶部宽-->
 				<triangleHeight>10</triangleHeight><!--倒三角的中线高-->
-				<triangleBackgroundColor>0x333333</triangleBackgroundColor><!--倒三角的背景色-->
+				<triangleBackgroundColor>0xFF6461</triangleBackgroundColor><!--倒三角的背景色-->
 				<triangleBorder>0</triangleBorder><!--倒三角的边框粗细-->
 				<triangleBorderColor>0xFFFFFF</triangleBorderColor><!--倒三角的边框颜色-->
 				<triangleAlpha>0.8</triangleAlpha><!--倒三角的透明度-->
@@ -257,7 +257,7 @@
 				<triangleDeviationY>0</triangleDeviationY><!--倒三角默认是在提示框下方的，这里可以使之在垂直方向进行偏移-->
 			</background>
 			<button><!--列表按钮普通样式-->
-				<backgroundColor>0x333333</backgroundColor><!--背景颜色-->
+				<backgroundColor>0xFF6461</backgroundColor><!--背景颜色-->
 				<overBackgroundColor>0x0787FF</overBackgroundColor><!--鼠标经过时背景颜色-->
 				<backgroundAlpha>0.8</backgroundAlpha>
 				<border>0</border>
@@ -275,7 +275,7 @@
 				<alpha>1</alpha><!--文字透明度-->
 			</button>
 			<buttonHighlight><!--列表按钮高亮样式-->
-				<backgroundColor>0x005CB2</backgroundColor><!--背景颜色-->
+				<backgroundColor>0xFF6461</backgroundColor><!--背景颜色-->
 				<overBackgroundColor>0x0787FF</overBackgroundColor><!--鼠标经过时背景颜色-->
 				<backgroundAlpha>0.8</backgroundAlpha>
 				<border>0</border>

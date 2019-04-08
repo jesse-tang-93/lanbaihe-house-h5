@@ -1440,7 +1440,7 @@ function ckplayerConfig() {
 			this.css(controlBarBgID, {
 				width: '100%',
 				height: bHeight + 'px',
-				backgroundColor: '#000000',
+				backgroundColor: '#FF6461',
 				position: 'absolute',
 				bottom: '0px',
 				filter: 'alpha(opacity:0.8)',
