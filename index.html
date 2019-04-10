@@ -8,12 +8,34 @@
 
 <head>
   <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge，chrome=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>视频示例</title>
   <meta name="description" content="" />
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
   <link rel="stylesheet" href="./layui/css/layui.css">
-  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/test.css">
+  <script>
+    (function (window, document) {
+      function resize() {
+        var ww = window.innerWidth;
+        if (ww > window.screen.width) {
+          window.requestAnimationFrame(resize);
+        } else {
+          if (ww > 1366) ww = 1366;
+          // 下面代码按照比例为100px = 1rem，此处一定要同pxToRem的转换比例
+          document.documentElement.style.fontSize = ww * 100 / 1366 + 'px';
+        }
+      }
+      if (document.readyState !== 'loading') {
+        resize();
+      } else {
+        document.addEventListener('DOMContentLoaded', resize);
+      }
+      window.addEventListener('resize', resize);
+    })(window, document);
+  </script>
 </head>
 
 <body>
@@ -69,9 +91,11 @@
     </ul>
   </div><!-- end top-->
   <div class="container">
-    <div class="layui-carousel" id="carousel">
+    <div class="layui-carousel carousel-box" id="carousel">
       <div carousel-item>
-        <div><img src="./images/banner.jpg" alt=""></div>
+        <div><img
+            src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1555508626&di=3190c349de209566cdc0e866e683ad29&imgtype=jpg&er=1&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201407%2F21%2F20140721112304_rfPE3.jpeg"
+            alt=""></div>
         <div><img src="https://hbimg.huabanimg.com/cb998b59e4024cf386cd1406ec1b69b898d66e4e5a1d3-311acb_fw658" alt=""
             style="width:100%;object-fit:cover;"></div>
         <div>条目3</div>
@@ -438,8 +462,7 @@
       carousel.render({
         elem: '#carousel'
         , width: '100%' //设置容器宽度
-        , arrow: 'hover', //始终显示箭头
-        height: '600px'
+        , height: '600px'
         //,anim: 'updown' //切换动画方式
       });
 
