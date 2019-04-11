@@ -8,12 +8,34 @@
 
 <head>
   <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge，chrome=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>关于我们</title>
   <meta name="description" content="" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
   <link rel="stylesheet" href="./layui/css/layui.css">
   <link rel="stylesheet" href="./css/about.css">
+  <script>
+    (function (window, document) {
+      function resize() {
+        var ww = window.innerWidth;
+        if (ww > window.screen.width) {
+          window.requestAnimationFrame(resize);
+        } else {
+          if (ww > 1366) ww = 1366;
+          // 下面代码按照比例为100px = 1rem，此处一定要同pxToRem的转换比例
+          document.documentElement.style.fontSize = ww * 100 / 1366 + 'px';
+        }
+      }
+      if (document.readyState !== 'loading') {
+        resize();
+      } else {
+        document.addEventListener('DOMContentLoaded', resize);
+      }
+      window.addEventListener('resize', resize);
+    })(window, document);
+  </script>
 </head>
 
 <body>
@@ -56,7 +78,7 @@
     </div>
     <!-- nav -->
     <ul class="layui-nav nav-box" lay-filter="">
-      <li class="layui-nav-item active" lay-unselect><a href="">首页</a></li>
+      <li class="layui-nav-item" lay-unselect><a href="./index.html">首页</a></li>
       <li class="layui-nav-item" lay-unselect><a href="">服务内容</a></li>
       <li class="layui-nav-item" lay-unselect><a href="">培训项目</a></li>
       <li class="layui-nav-item" lay-unselect>
@@ -64,11 +86,33 @@
       </li>
       <li class="layui-nav-item" lay-unselect><a href="">师资力量</a></li>
       <li class="layui-nav-item" lay-unselect><a href="">学员风采</a></li>
-      <li class="layui-nav-item end-item" lay-unselect><a href="">关于我们</a></li>
-
+      <li class="layui-nav-item end-item active" lay-unselect><a href="">关于我们</a></li>
     </ul>
   </div><!-- end top-->
   <div class="container">
+    <!-- about-us-banner -->
+    <div class="us-banner-box">
+        <span>About Us</span>
+        <p>关于我们</p>
+    </div>
+    <div class="us-container">
+      <div class="us-info-title">
+          公司简介
+      </div>
+      <div class="us-edit-content">
+        <!-- 示例内容 -->
+          长沙兰百合家庭服务有限公司起源于2005年，从业十三年以来服务超3万户家庭，推荐就业超5万人次。 
+          长沙兰百合家庭服务有限公司起源于2005年，从业十三年以来服务超3万户家庭，推荐就业超5万人次。
+          长沙兰百合家庭服务有限公司起源于2005年，从业十三年以来服务超3万户家庭，推荐就业超5万人次。
+          长沙兰百合家庭服务有限公司起源于2005年，从业十三年以来服务超3万户家庭，推荐就业超5万人次。
+          <img src='https://hbimg.huabanimg.com/ff6ba8f7388db6c1bc54dc304d0a2903ea309911cf163-gyfQt4_fw658'/>
+          <img src='https://hbimg.huabanimg.com/496e7e6959d7cb618175fcb93d628331a6008a4a12b22-rHZG6r_fw658'/>
+      </div>
+    </div>
+    <!-- 地图和联系方式 -->
+    <div class="address-box">
+      
+    </div>
   </div>
   <!-- footer -->
   <footer>
@@ -85,8 +129,7 @@
   <script src="./layui/layui.js"></script>
   <script>
     layui.use(['element', 'jquery'], function () {
-      var carousel = layui.carousel,
-        element = layui.element,
+      var element = layui.element,
         $ = layui.$
     });
   </script>

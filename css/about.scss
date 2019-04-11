@@ -1,153 +1,198 @@
-$main-color: #7F2974;
-$c99:#999999;
-$c66:#666666;
-$cff:#ffffff;
-.fr{
-  float:right
-};
-.fl{
-  float:left
-};
-body{
-  padding-top: 206px;
+@function rem($px) {
+  @return $px / 100 + rem;
 }
-.top-box{
-   position: fixed;
-   top:0;
-   left:0;
-   right:0;
-   z-index: 5;
-   background-color: $cff;
-  .top-tips-nav{
-    max-width: 1366px;
-    padding: 0 160px;
-    line-height: 38px;
-    width: 1366px;
+$main-color: #7f2974;
+$c99: #999999;
+$c66: #666666;
+$cff: #ffffff;
+.fr {
+  float: right;
+}
+.fl {
+  float: left;
+}
+body {
+  padding-top: rem(206);
+}
+img {
+  max-width: 100%;
+}
+.top-box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: $cff;
+  .top-tips-nav {
+    max-width: rem(1366);
+    padding: 0 rem(160);
+    line-height: rem(38);
+    width: rem(1366);
     box-sizing: border-box;
     margin: 0 auto;
-    .hello-text{
+    .hello-text {
       color: $main-color;
-      font-size:14px;
+      font-size: rem(14);
       font-weight: 500;
-      letter-spacing: 1.2px;
+      letter-spacing: rem(1.2);
     }
-    .tip-nav{
+    .tip-nav {
       background-color: #fff;
       padding: 0;
-      .layui-nav-bar{
+      .layui-nav-bar {
         background-color: transparent;
       }
-      .layui-nav-item{
+      .layui-nav-item {
         line-height: inherit;
-        a{
-          color:$c99;
+        a {
+          color: $c99;
           font-size: inherit;
           font-size: inherit;
           padding: 0;
-          margin-right: 33px;
+          margin-right: rem(33);
         }
-        &.end-item a{
+        &.end-item a {
           margin-right: 0;
         }
       }
     }
   }
-  .top-line{
-    height: 4px;
+  .top-line {
+    height: rem(4);
     background-color: $main-color;
     margin: 0;
     padding: 0;
   }
-  .top-icon-box{
-    width: 1366px;
+  .top-icon-box {
+    width: rem(1366);
     font-size: 0;
-    max-width: 1366px;
+    max-width: rem(1366);
     margin: 0 auto;
-    padding: 19px 0 11px 169px;
+    padding: rem(19) 0 rem(11) rem(169);
     box-sizing: border-box;
-    .box-style{
+    .box-style {
       display: inline-block;
       color: $c66;
       font-size: 0;
-      ul{
+      ul {
         display: inline-block;
         vertical-align: middle;
-        li{
+        li {
           font-family: PingFangSC-Regular;
-          font-size: 14px;
+          font-size: rem(14);
         }
       }
     }
-    .tel-info-box{
-      img{
-       display: inline-block;
-       width: 45px;
-       height: 32px;
-       margin-right: 10px;
-       vertical-align: middle;
+    .tel-info-box {
+      img {
+        display: inline-block;
+        width: rem(45);
+        height: rem(32);
+        margin-right: rem(10);
+        vertical-align: middle;
       }
     }
   }
-  .logo{
-    width: 60px;
-    height: 60px;
+  .logo {
+    width: rem(60);
+    height: rem(60);
     display: inline-block;
-    margin-left: 238px;
-    margin-right: 304px;
+    margin-left: rem(238);
+    margin-right: rem(304);
   }
-  .local-info-box{
-    img{
-      width: 34px;
-      height: 42px;
-      margin-right: 10px;
+  .local-info-box {
+    img {
+      width: rem(34);
+      height: rem(42);
+      margin-right: rem(10);
     }
   }
-  .nav-box{
-    max-width: 1366px;
+  .nav-box {
+    max-width: rem(1366);
     margin: 0 auto;
     color: #303030;
-    background-color:$cff;
-    padding: 0 170px;
-    .layui-nav-bar{
+    background-color: $cff;
+    padding: 0 rem(170);
+    .layui-nav-bar {
       background-color: transparent;
     }
-    .layui-nav-item{
-      line-height: 74px;
-      &.active a{
-        color:$main-color;
+    .layui-nav-item {
+      line-height: rem(74);
+      &.active a {
+        color: $main-color;
       }
-      a{
+      a {
         color: initial;
-        font-size: 18px;
+        font-size: rem(18);
         padding: 0;
-        margin-right:93px;
+        margin-right: rem(93);
       }
-      &.end-item a{
+      &.end-item a {
         margin-right: 0;
       }
     }
   }
 }
-.container{
-  max-width: 1366px;
+.container {
+  max-width: rem(1366);
   margin: 0 auto;
 }
-// footer
-footer{
-  padding-top: 60px;
+.us-banner-box{
+  height: rem(200);
+  position: relative;
+  color: $cff;
   text-align: center;
-  padding-bottom: 60px;
-  .bottom-title{
-    margin: 0 auto;
-    display: block;
-    width: 357px;
-    height: 198px;
-    object-fit: contain;
+  background: url('../images/banner.jpg') center no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  span{
+    font-size: rem(20)
   }
   p{
-    margin: 50px auto 10px;
+    font-size: rem(36)
   }
-  p,.bottom-nav span a{
+}
+.us-container{
+  padding: 0 rem(160);
+}
+.us-info-title{
+  line-height: rem(98);
+  font-size: rem(30);
+  color: #111111;
+  border-bottom:rem(4) solid $main-color;
+}
+.us-edit-content{
+  padding: rem(30) 0;
+}
+// footer
+footer {
+  padding-top: rem(60);
+  text-align: center;
+  padding-bottom: rem(60);
+  .bottom-title {
+    margin: 0 auto;
+    display: block;
+    width: rem(357);
+    height: rem(198);
+    object-fit: contain;
+  }
+  p {
+    margin: rem(50) auto rem(10);
+  }
+  p,
+  .bottom-nav span a {
     color: #aaa;
+  }
+  .layui-breadcrumb a:hover {
+    color: $main-color !important;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1385px) {
+  .top-box .nav-box .layui-nav-item a {
+    margin-right: 0.88rem;
   }
 }
