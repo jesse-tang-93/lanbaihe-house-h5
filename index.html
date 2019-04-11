@@ -105,7 +105,10 @@
     </div>
     <!-- 培训项目 -->
     <div class="project-box">
-      <img src="./images/project-title.png" alt="" class="project-title">
+      <div class="project-title-new">
+        <p class='project-title-mintext'><span>Training Project</span></p>
+        <p class='project-title  g-bg'>培训项目</p>
+      </div>
       <fieldset class="layui-elem-field layui-field-title project-info">
         <legend>为什么选择我们</legend>
       </fieldset>
@@ -179,7 +182,10 @@
     </div>
     <!-- server-box -->
     <div class="server-box">
-      <img src="./images/server-title.png" alt="" class="project-title">
+      <div class="project-title-new">
+        <p class='project-title-mintext'><span>Service Content</span></p>
+        <p class='project-title ff-bg'>服务项目</p>
+      </div>
       <!-- server-tab -->
       <div class="layui-tab layui-tab-brief server-tab" lay-filter="docDemoTabBrief">
         <ul class="layui-tab-title tab-title-box">
@@ -283,7 +289,10 @@
     </div>
     <!-- video-box -->
     <div class="video-box">
-      <img src="./images/video-title.png" alt="" class="project-title">
+      <div class="project-title-new ">
+        <p class='project-title-mintext'><span>Online Video</span></p>
+        <p class='project-title g-bg'>线上视频</p>
+      </div>
       <div class="video-content-box">
         <div class="video-container" id='video'>
         </div>
@@ -317,7 +326,10 @@
     </div>
     <!-- teacher-box -->
     <div class="teacher-box">
-      <img src="./images/teacher-title.png" alt="" class="project-title">
+      <div class="project-title-new">
+        <p class='project-title-mintext'><span>Our Teacher</span></p>
+        <p class='project-title ff-bg'>师资力量</p>
+      </div>
       <div class="teacher-content">
         <div class='teacher-item'>
           <img src="./images/teacher.png" alt="">
@@ -373,14 +385,17 @@
     </div>
     <!-- student-box -->
     <div class="student-box">
-      <img src="./images/student-title.png" alt="" class="project-title">
+      <div class="project-title-new">
+        <p class='project-title-mintext'><span>Outstanding Student</span></p>
+        <p class='project-title g-bg'>优秀案例</p>
+      </div>
       <div class="student-content">
         <div class="student-item">
           <div class="student-card">
             <img class='student-head' src="./images/teacher.png" alt="">
             <div class="student-info">
               <p class="student-name">王大丽</p>
-              <p class="student-text">年龄45岁，籍贯宁乡2018年在长沙兰百合学习月嫂育婴师课程，得到数次客户好评，目前薪资4500</p>
+              <p class="student-text">年龄45岁，籍贯宁乡2018年在长沙兰百合学习月嫂育婴师课程，得到数次客户好评，目前薪资<b class='student-money'>4500</b></p>
             </div>
           </div>
           <div class="out-bg">
@@ -392,7 +407,7 @@
             <img class='student-head' src="./images/teacher.png" alt="">
             <div class="student-info">
               <p class="student-name">王大丽</p>
-              <p class="student-text">年龄45岁，籍贯宁乡2018年在长沙兰百合学习月嫂育婴师课程，得到数次客户好评，目前薪资4500</p>
+              <p class="student-text">年龄45岁，籍贯宁乡2018年在长沙兰百合学习月嫂育婴师课程，得到数次客户好评，目前薪资<b class='student-money'>4500</b></p>
             </div>
           </div>
           <div class="out-bg">
@@ -404,7 +419,7 @@
             <img class='student-head' src="./images/teacher.png" alt="">
             <div class="student-info">
               <p class="student-name">王大丽</p>
-              <p class="student-text">年龄45岁，籍贯宁乡2018年在长沙兰百合学习月嫂育婴师课程，得到数次客户好评，目前薪资4500</p>
+              <p class="student-text">年龄45岁，籍贯宁乡2018年在长沙兰百合学习月嫂育婴师课程，得到数次客户好评，目前薪资<b class='student-money'>4500</b></p>
             </div>
           </div>
           <div class="out-bg">
@@ -416,7 +431,7 @@
             <img class='student-head' src="./images/teacher.png" alt="">
             <div class="student-info">
               <p class="student-name">王大丽</p>
-              <p class="student-text">年龄45岁，籍贯宁乡2018年在长沙兰百合学习月嫂育婴师课程，得到数次客户好评，目前薪资4500</p>
+              <p class="student-text">年龄45岁，籍贯宁乡2018年在长沙兰百合学习月嫂育婴师课程，得到数次客户好评，目前薪资<b class='student-money'>4500</b></p>
             </div>
           </div>
           <div class="out-bg">
@@ -428,7 +443,7 @@
             <img class='student-head' src="./images/teacher.png" alt="">
             <div class="student-info">
               <p class="student-name">王大丽</p>
-              <p class="student-text">年龄45岁，籍贯宁乡2018年在长沙兰百合学习月嫂育婴师课程，得到数次客户好评，目前薪资4500</p>
+              <p class="student-text">年龄45岁，籍贯宁乡2018年在长沙兰百合学习月嫂育婴师课程，得到数次客户好评，目前薪资<b class='student-money'>4500</b></p>
             </div>
           </div>
           <div class="out-bg">
@@ -462,7 +477,7 @@
       carousel.render({
         elem: '#carousel'
         , width: '100%' //设置容器宽度
-        , height: '600px'
+        , height: '6rem'
         //,anim: 'updown' //切换动画方式
       });
 
@@ -470,6 +485,12 @@
         $(this).find('.teacher-info').addClass("layui-anim layui-anim-upbit");
       }, function () {
         $(this).find('.teacher-info').removeClass("layui-anim layui-anim-upbit");
+      });
+      // 底部学员hover动画高度处理
+      $(".student-item").hover(function () {
+        $(this).find('.student-info .student-text').delay(330).fadeIn('fast').css('height','auto')
+      }, function () {
+        $(this).find('.student-info .student-text').css('height','0.3rem').fadeOut(500)
       });
     });
   </script>

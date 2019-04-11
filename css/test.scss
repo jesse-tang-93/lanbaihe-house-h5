@@ -160,6 +160,36 @@ img {
     height: rem(16);
     background-color: #dedede;
   }
+  // 栏目标题文字信息
+  .project-title-new{
+    text-align: center;
+    margin: 0 auto;
+    width:rem(400);
+    height: rem(80);
+    position: relative;
+    border:1px solid #333;
+    .project-title-mintext{
+      line-height: rem(60);
+      font-size: rem(30);
+      color:$main-color;
+    }
+    .project-title{
+      width: rem(240);
+      position: absolute;
+      left:50%;
+      bottom:rem(-27);
+      transform: translateX(-50%);
+      font-size: rem(50);
+      color:#555;
+      line-height: 0.47rem;
+      &.ff-bg{
+        background-color: #fff;
+      }
+      &.g-bg{
+        background-color: #f6f7f8;
+      }
+    }
+  }
 }
 .carousel-box{
   .layui-carousel-arrow{
@@ -179,17 +209,11 @@ img {
 .project-box{
   background-color: #F6F7F8;
   padding-top: rem(80);
-  .project-title{
-    margin: 0 auto;
-    width: rem(400);
-    height: rem(107);
-    display: block;
-  }
   .project-info{
     border-color: $main-color;
     width: rem(700);
     margin: 0 auto;
-    margin-top: rem(48);
+    margin-top: rem(75);
     legend{
       padding: 0 rem(40);
       margin-left:rem(207);
@@ -294,17 +318,10 @@ img {
 .server-box{
   padding-top: rem(80);
   padding-bottom: rem(70);
-  .project-title{
-    margin: 0 auto;
-    width: rem(400);
-    height: rem(107);
-    display: block;
-    padding-bottom: rem(57);
-  }
   .server-tab{
     box-sizing: border-box;
     padding: rem(30) rem(64) rem(44);
-    margin: 0 auto;
+    margin: rem(85) auto 0;
     width:rem(1046);
     height:rem(524);
     background:rgba(255,255,255,1);
@@ -381,15 +398,8 @@ img {
   padding-top: rem(80);
   padding-bottom: rem(80);
   background-color:#f6f7f8;
-  .project-title{
-    margin: 0 auto;
-    width: rem(400);
-    height: rem(107);
-    display: block;
-    padding-bottom: rem(58);
-  }
   .video-content-box{
-    margin: 0 auto;
+    margin: rem(85) auto 0;
     width:rem(1099);
     height:rem(530);
     background:rgba(255,255,255,1);
@@ -409,7 +419,7 @@ img {
       margin-left: rem(12);
       .video-list-title{
         border-bottom: rem(1) solid $main-color;
-        padding-bottom: rem(11);
+        padding-bottom: rem(5);
         box-sizing: border-box;
       }
       .title{
@@ -461,14 +471,8 @@ img {
 // teacher
 .teacher-box{
   padding-top: rem(80);
-  .project-title{
-    margin: 0 auto;
-    width: rem(400);
-    height: rem(107);
-    display: block;
-    padding-bottom: rem(50);
-  }
   .teacher-content{
+    margin-top: rem(77);
     font-size: 0;
     text-align: center;
     padding-bottom: rem(140);
@@ -544,17 +548,12 @@ img {
   padding-top: rem(80);
   padding-bottom: rem(50);
   background-color: #f6f7f8;
-  .project-title{
-    margin: 0 auto;
-    width: rem(400);
-    height: rem(107);
-    display: block;
-    padding-bottom: rem(211);
-  }
   .student-content{
     font-size: 0;
     text-align: center;
+    margin-top: rem(238);
     .student-item{
+      cursor: default;
       box-shadow: 0px rem(-4) rem(20) 0px rgba(239,239,239,0.6), 0px rem(4) rem(10) 0px rgba(222,222,222,0.8);
       height: rem(170);
       width: rem(230);
@@ -565,13 +564,8 @@ img {
       box-sizing: border-box;
       position: relative;
       &:hover .student-card{
-        top: -70%;
-        transition: all .5s;
-      }
-      &:hover .student-card .student-info{
-        -webkit-transition: all 1s ease-in 1s;
-        transition: all 1s ease-in 1s;
-        height:auto;
+        top: -81%;
+        transition: all 1s;
       }
       .out-bg{
         position: absolute;
@@ -613,13 +607,11 @@ img {
           transform: translateX(-50%);
         }
         .student-info{
-          -webkit-transition: all 1s ease-in 1s;
-          transition: all 1s ease-in 1s;
           padding: rem(48) rem(12) 0;
           box-sizing: border-box;
           text-align: center;
           background-color: #f7f7f7;
-          height: rem(100);
+          height: auto;
           overflow: hidden;
           .student-name{
             color: #333333;
@@ -627,8 +619,15 @@ img {
             margin-bottom: rem(14);
           }
           .student-text{
+            display: none;
+            height: rem(30);
+            overflow: hidden;
             font-size: rem(16);
             color: #666;
+            .student-money{
+              display: block;
+              line-height: rem(40);
+            }
           }
         }
       }
