@@ -7,7 +7,7 @@
 }
 
 body {
-  padding-top: 2.06rem;
+  padding-top: 1.5rem;
 }
 
 img {
@@ -33,7 +33,7 @@ img {
 }
 
 .top-box .top-tips-nav .hello-text {
-  color: #7F2974;
+  color: #7f2974;
   font-size: 0.14rem;
   font-weight: 500;
   letter-spacing: 0.012rem;
@@ -65,8 +65,8 @@ img {
 }
 
 .top-box .top-line {
-  height: 0.04rem;
-  background-color: #7F2974;
+  height: 0.02rem;
+  background-color: #7f2974;
   margin: 0;
   padding: 0;
 }
@@ -76,7 +76,7 @@ img {
   font-size: 0;
   max-width: 13.66rem;
   margin: 0 auto;
-  padding: 0.19rem 0 0.11rem 1.69rem;
+  padding: 0.1rem 0 0 1.69rem;
   box-sizing: border-box;
 }
 
@@ -105,8 +105,8 @@ img {
 }
 
 .top-box .logo {
-  width: 0.6rem;
-  height: 0.6rem;
+  width: 0.5rem;
+  height: 0.5rem;
   display: inline-block;
   margin-left: 2.38rem;
   margin-right: 3.04rem;
@@ -114,7 +114,7 @@ img {
 
 .top-box .local-info-box img {
   width: 0.34rem;
-  height: 0.42rem;
+  height: 0.4rem;
   margin-right: 0.1rem;
 }
 
@@ -131,11 +131,11 @@ img {
 }
 
 .top-box .nav-box .layui-nav-item {
-  line-height: 0.74rem;
+  line-height: 0.5rem;
 }
 
 .top-box .nav-box .layui-nav-item.active a {
-  color: #7F2974;
+  color: #7f2974;
 }
 
 .top-box .nav-box .layui-nav-item a {
@@ -160,6 +160,7 @@ img {
 
 .container .layui-carousel[lay-arrow=hover] .layui-carousel-arrow {
   left: 0.5rem;
+  margin-top: -0.55rem;
 }
 
 .container .layui-carousel[lay-arrow=hover] .layui-carousel-arrow[lay-type=add] {
@@ -169,7 +170,7 @@ img {
 }
 
 .container .layui-carousel-ind li.layui-this {
-  background-color: #7F2974;
+  background-color: #7f2974;
 }
 
 .container .layui-carousel-ind ul, .container .layui-carousel-ind ul:hover {
@@ -195,7 +196,7 @@ img {
 .container .project-title-new .project-title-mintext {
   line-height: 0.6rem;
   font-size: 0.3rem;
-  color: #7F2974;
+  color: #7f2974;
 }
 
 .container .project-title-new .project-title {
@@ -237,7 +238,7 @@ img {
 }
 
 .project-box .project-info {
-  border-color: #7F2974;
+  border-color: #7f2974;
   width: 7rem;
   margin: 0 auto;
   margin-top: 0.75rem;
@@ -260,7 +261,7 @@ img {
   width: 2.8rem;
   height: 3.3rem;
   text-align: center;
-  border: 0.04rem solid #7F2974;
+  border: 0.04rem solid #7f2974;
   margin-right: 0.77rem;
   position: relative;
 }
@@ -271,7 +272,7 @@ img {
 
 .project-box .project-info-box .info-item .item-title {
   font-size: 0.28rem;
-  color: #7F2974;
+  color: #7f2974;
 }
 
 .project-box .project-info-box .info-item .item-line {
@@ -280,7 +281,7 @@ img {
   background-color: #fff;
   margin: 0 auto;
   padding-top: 0.18rem;
-  border-bottom: 0.06rem solid #7F2974;
+  border-bottom: 0.06rem solid #7f2974;
 }
 
 .project-box .project-info-box .info-item p {
@@ -312,7 +313,7 @@ img {
 }
 
 .project-box .project-content-title {
-  border-color: #7F2974;
+  border-color: #7f2974;
   width: 6rem;
   margin: 0 auto;
 }
@@ -382,16 +383,16 @@ img {
   box-sizing: border-box;
   width: 1.7rem;
   line-height: 0.5rem;
-  border: 0.01rem solid #7F2974;
+  border: 0.01rem solid #E9709B;
   border-radius: 0.25rem;
   font-size: 0.22rem;
-  color: #7F2974;
+  color: #E9709B;
   margin-right: 0.92rem;
 }
 
 .server-box .server-tab .tab-title-box li.layui-this {
   color: #ffffff;
-  background-color: #7F2974;
+  background-color: #E9709B;
 }
 
 .server-box .server-tab .tab-title-box li.layui-this:after {
@@ -480,7 +481,7 @@ img {
 }
 
 .video-box .video-content-box .video-list .video-list-title {
-  border-bottom: 0.01rem solid #7F2974;
+  border-bottom: 0.01rem solid #7f2974;
   padding-bottom: 0.05rem;
   box-sizing: border-box;
 }
@@ -667,7 +668,7 @@ img {
 }
 
 .student-box .student-content .student-item .out-bg p {
-  color: #7F2974;
+  color: #7f2974;
   font-size: 0.2rem;
   text-align: center;
 }
@@ -751,7 +752,7 @@ footer p, footer .bottom-nav span a {
 }
 
 footer .layui-breadcrumb a:hover {
-  color: #7F2974 !important;
+  color: #7f2974 !important;
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1385px) {

@@ -154,12 +154,12 @@ img {
   margin: 0 auto;
 }
 
-.us-banner-box {
+.server-banner-box {
   height: 2rem;
   position: relative;
   color: #ffffff;
   text-align: center;
-  background: url("../images/us-banner.jpg") center no-repeat;
+  background: url("../images/server-banner.png") center no-repeat;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -167,111 +167,60 @@ img {
   justify-content: center;
 }
 
-.us-banner-box span {
+.server-banner-box span {
   font-size: 0.2rem;
 }
 
-.us-banner-box p {
+.server-banner-box p {
   font-size: 0.36rem;
 }
 
-.us-container {
-  padding: 0 1.6rem;
-}
-
-.us-info-title {
-  line-height: 0.98rem;
-  font-size: 0.3rem;
-  color: #111111;
-  border-bottom: 0.04rem solid #7f2974;
-}
-
-.us-edit-content {
-  padding: 0.3rem 0;
-}
-
-.address-box {
-  font-size: 0;
-  text-align: center;
-  margin-top: 0.6rem;
-  padding: 0.6rem 0;
+.server-container {
   background-color: #f6f7f8;
+  padding: 0.8rem 1.6rem;
+  font-size: 0;
 }
 
-.address-box .address-img {
+.server-container .server-nav {
   display: inline-block;
-  width: 6.92rem;
-  height: 4.24rem;
-  margin-right: 0.2rem;
-  background: url("../images/address-map.png") 0 0 no-repeat;
-  background-size: contain;
+  margin-right: 0.6rem;
 }
 
-.address-box .company-info-box {
-  display: inline-block;
-  vertical-align: top;
-}
-
-.address-box .company-info-box p.info-title {
-  width: 3.02rem;
-  text-align: left;
-  font-weight: 600;
-  padding-right: 0.07rem;
-  line-height: 0.87rem;
-  font-size: 0.23rem;
-  color: #7f2974;
-  border-bottom: 0.04rem solid #7f2974;
+.server-container .server-nav .nav-line {
+  width: 1rem;
+  height: 0.1rem;
+  background-color: #7f2974;
   margin-bottom: 0.3rem;
 }
 
-.address-box .company-info-box ul li {
-  font-size: 0;
-  text-align: left;
-  margin-bottom: 0.28rem;
+.server-container .server-nav ul li {
+  font-size: 0.24rem;
+  color: #808080;
+  margin-bottom: 0.3rem;
+  cursor: pointer;
 }
 
-.address-box .company-info-box ul li:last-child {
+.server-container .server-nav ul li:last-child {
   margin-bottom: 0;
 }
 
-.address-box .company-info-box ul li i {
+.server-container .server-nav ul li.nav-title {
+  color: #333;
+  cursor: default;
+}
+
+.server-container .server-nav ul li.active {
+  color: #BB90B6;
+}
+
+.server-container .server-content {
+  background: #ffffff;
   display: inline-block;
-  vertical-align: middle;
-  background-size: 100%;
-  width: 0.34rem;
-  margin-right: 0.11rem;
-}
-
-.address-box .company-info-box ul li i.icon-tel {
-  height: 0.24rem;
-  background: url("../images/address-tel.png") center no-repeat;
-}
-
-.address-box .company-info-box ul li i.icon-loc {
-  background: url("../images/address-loc.png") center no-repeat;
-  height: 0.3rem;
-}
-
-.address-box .company-info-box ul li i.icon-phone {
-  background: url("../images/address-phone.png") center no-repeat;
-  height: 0.3rem;
-}
-
-.address-box .company-info-box ul li i.icon-email {
-  background: url("../images/address-email.png") center no-repeat;
-  height: 0.21rem;
-}
-
-.address-box .company-info-box ul li i.icon-www {
-  background: url("../images/address-icon.png") center no-repeat;
-  height: 0.24rem;
-}
-
-.address-box .company-info-box ul li p {
-  font-size: 0.2rem;
-  color: #666;
-  display: inline-block;
-  vertical-align: middle;
+  font-size: 0.15rem;
+  width: 8.4rem;
+  vertical-align: top;
+  padding-left: 0.22rem;
+  box-sizing: border-box;
 }
 
 footer {
@@ -304,5 +253,8 @@ footer .layui-breadcrumb a:hover {
 @media screen and (min-width: 1024px) and (max-width: 1385px) {
   .top-box .nav-box .layui-nav-item a {
     margin-right: 0.88rem;
+  }
+  .server-container .server-nav {
+    margin-right: 0.3rem;
   }
 }
