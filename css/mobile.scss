@@ -1,0 +1,75 @@
+// 移动端样式处理
+@function rem($px) {
+  @return $px / 100 + rem;
+}
+$main-color: #7f2974;
+$c99: #999999;
+$c66: #666666;
+$cff: #ffffff;
+/*小屏幕*/
+body{
+  padding-top: 70px;
+}
+// 隐藏顶部小导航
+.top-box{
+  height: 70px;
+  overflow: hidden;
+  transition: 0.3s;
+  .top-tips-nav,.top-line,.top-icon-box{
+    display: none;
+  }
+  .mobile-nav{
+    position: relative;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    .mobile-logo{
+      line-height: 80px;
+      width: 50px;
+      height: 50px;
+    }
+    button {
+      width: 25px;
+      height: 30px;
+      position: absolute;
+      top: 25px;
+      right: 15px;
+      background-color: transparent;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      span{
+          display: block;
+          width: 25px;
+          height: 2px;
+          background:$main-color;
+          margin-bottom: 6px;
+          transition: 0.5s;
+          &.spa1 {
+            transform: rotate(45deg);
+          }
+          &.spa3 {
+            transform: rotate(-45deg) translate(5px,-6px);
+        }
+      }
+   }
+  }
+  .nav-box{
+    width: 100%;
+    padding: 0 20px;
+    .layui-nav-item{
+      display: block;
+      margin-bottom: 10px;
+      &.active{
+        border-bottom: 1px solid $main-color;
+      }
+      a{
+        font-size: 16px;
+        line-height: 22px;
+        margin-right: 0;
+      }
+    }
+  }
+}
+.project-box .project-info-box .info-item{
+  display: inline-block
+}
