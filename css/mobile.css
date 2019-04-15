@@ -78,3 +78,8 @@ body {
 .project-box .project-info-box .info-item {
   display: inline-block;
 }
+
+.project-box .project-info-box {
+  text-align: center;
+  padding: 0.7rem 0 0;
+}
