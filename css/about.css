@@ -6,6 +6,10 @@
   float: left;
 }
 
+html {
+  font-size: 100px;
+}
+
 body {
   padding-top: 1.5rem;
 }
