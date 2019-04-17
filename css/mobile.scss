@@ -7,6 +7,9 @@ $c99: #999999;
 $c66: #666666;
 $cff: #ffffff;
 /*小屏幕*/
+html{
+  font-size:28px;
+}
 body{
   padding-top: 70px;
 }
@@ -70,10 +73,176 @@ body{
     }
   }
 }
+.project-box .project-content{
+  padding: rem(60) rem(30);
+  text-align: center
+}
+.project-box .project-content .content-item{
+  width: 50%;
+  height: rem(690);
+  margin-right: 0;
+  p{
+    font-size: rem(48);
+  }
+}
+.project-box p.info-slogan{
+  font-size: rem(52);
+  padding: 0 rem(30);
+  margin: rem(80) auto rem(100);
+}
+.project-box .project-content .content-item img{
+  width: rem(550);
+  height: rem(550);
+}
 .project-box .project-info-box .info-item{
-  display: inline-block
+  display: inline-block;
+  width: rem(410);
+  height: rem(540);
+  margin-right: rem(30);
+  .nums-text{
+    width: rem(65);
+    height: rem(75);
+    top:rem(-38);
+  }
+  .item-title{
+    font-size: rem(50);
+  }
+  p{
+    font-size: rem(48);
+    line-height: rem(60);
+    padding-top: rem(40);
+  }
 }
 .project-box .project-info-box{
   text-align: center;
   padding:rem(70) 0 0;
+  font-size: 0;
+}
+.video-box{
+  .video-content-box{
+    width: 100%;
+    padding:0;
+    height: auto;
+    .video-container{
+      width: 100%;
+      height: rem(800);
+    }
+    .video-list{
+      width: 100%;
+    }
+    .video-container,.video-list{
+      display: block;
+    }
+  }
+}
+// 服务项目
+.server-box .server-tab{
+  height: auto;
+  width: 100%;
+  padding:rem(60) rem(20) rem(65);
+  .item-box{
+    text-align: center;
+  }
+  .item-box .server-item-info{
+    width: 32%;
+    height: rem(680);
+    margin-right: 5px;
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+.server-box .server-tab .tab-title-box{
+  height: rem(150);
+  text-align: center;
+}
+.server-box .server-tab .tab-title-box li {
+  border:1px solid #E9709B;
+  width: auto;
+  line-height: rem(100);
+  font-size:rem(52);
+  margin-right: rem(60);
+  border-radius: rem(60);
+}
+.server-box .server-tab .item-box .server-item-info .server-item-blank p.title{
+  font-size: rem(50);
+  margin: rem(40) 0 rem(30);
+}
+.server-box .server-tab .item-box .server-item-info .server-item-blank p.server-info-text{
+  font-size: rem(45);
+  line-height: rem(60);
+}
+.server-box .server-tab .item-box .server-item-info .server-item-blank{
+  height: rem(360);
+}
+// 师资
+.teacher-box{
+  overflow: hidden;
+}
+.teacher-box .teacher-content{
+  padding: 0 rem(80);
+  text-align: center;
+}
+.teacher-box .teacher-content .teacher-item{
+  width: 50%;
+  height:rem(800);
+  margin-right: 0;
+  padding-right: 4px;
+  margin-bottom: rem(60);
+}
+.teacher-box .teacher-content .teacher-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.teacher-box .teacher-content .teacher-item:nth-of-type(even) {
+  top:0;
+  padding-left: 4px;
+  .teacher-info{
+    left: 4px;
+
+  }
+}
+.teacher-box .teacher-content .teacher-item .teacher-info{
+  right: 4px;
+  width: auto;
+}
+.teacher-box .teacher-content .teacher-item .teacher-info .t-name{
+  font-size: rem(54)
+}
+.teacher-box .teacher-content .teacher-item .teacher-info .t-text{
+  font-size: rem(44)
+}
+.teacher-box .teacher-content .teacher-item .teacher-info .t-btn{
+  width: rem(210);
+  line-height: rem(60);
+  font-size: rem(40);
+  border-width: 1px;
+  border-radius: rem(20)
+}
+// student
+.m-student-box{
+  text-align: center;
+  padding: 0 rem(80);
+  .m-student-item{
+    position: relative;
+    height: rem(760);
+    padding-top: rem(200);
+    box-sizing: border-box;
+    margin-bottom: rem(40);
+    background-color: #ffffff;
+    box-shadow: -1px -1px 2px rgba(236, 183, 183, 0.4);
+    .student-head{
+      width: rem(200);
+      height: rem(200);
+      border-radius: 50%;
+      border: 2px solid #E9709B;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top:rem(-100); 
+    }
+  }
 }

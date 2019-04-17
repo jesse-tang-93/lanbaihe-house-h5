@@ -1,5 +1,9 @@
 @charset "UTF-8";
 /*小屏幕*/
+html {
+  font-size: 28px;
+}
+
 body {
   padding-top: 70px;
 }
@@ -75,11 +79,205 @@ body {
   margin-right: 0;
 }
 
+.project-box .project-content {
+  padding: 0.6rem 0.3rem;
+  text-align: center;
+}
+
+.project-box .project-content .content-item {
+  width: 50%;
+  height: 6.9rem;
+  margin-right: 0;
+}
+
+.project-box .project-content .content-item p {
+  font-size: 0.48rem;
+}
+
+.project-box p.info-slogan {
+  font-size: 0.52rem;
+  padding: 0 0.3rem;
+  margin: 0.8rem auto 1rem;
+}
+
+.project-box .project-content .content-item img {
+  width: 5.5rem;
+  height: 5.5rem;
+}
+
 .project-box .project-info-box .info-item {
   display: inline-block;
+  width: 4.1rem;
+  height: 5.4rem;
+  margin-right: 0.3rem;
+}
+
+.project-box .project-info-box .info-item .nums-text {
+  width: 0.65rem;
+  height: 0.75rem;
+  top: -0.38rem;
+}
+
+.project-box .project-info-box .info-item .item-title {
+  font-size: 0.5rem;
+}
+
+.project-box .project-info-box .info-item p {
+  font-size: 0.48rem;
+  line-height: 0.6rem;
+  padding-top: 0.4rem;
 }
 
 .project-box .project-info-box {
   text-align: center;
   padding: 0.7rem 0 0;
+  font-size: 0;
+}
+
+.video-box .video-content-box {
+  width: 100%;
+  padding: 0;
+  height: auto;
+}
+
+.video-box .video-content-box .video-container {
+  width: 100%;
+  height: 8rem;
+}
+
+.video-box .video-content-box .video-list {
+  width: 100%;
+}
+
+.video-box .video-content-box .video-container, .video-box .video-content-box .video-list {
+  display: block;
+}
+
+.server-box .server-tab {
+  height: auto;
+  width: 100%;
+  padding: 0.6rem 0.2rem 0.65rem;
+}
+
+.server-box .server-tab .item-box {
+  text-align: center;
+}
+
+.server-box .server-tab .item-box .server-item-info {
+  width: 32%;
+  height: 6.8rem;
+  margin-right: 5px;
+}
+
+.server-box .server-tab .item-box .server-item-info img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.server-box .server-tab .tab-title-box {
+  height: 1.5rem;
+  text-align: center;
+}
+
+.server-box .server-tab .tab-title-box li {
+  border: 1px solid #E9709B;
+  width: auto;
+  line-height: 1rem;
+  font-size: 0.52rem;
+  margin-right: 0.6rem;
+  border-radius: 0.6rem;
+}
+
+.server-box .server-tab .item-box .server-item-info .server-item-blank p.title {
+  font-size: 0.5rem;
+  margin: 0.4rem 0 0.3rem;
+}
+
+.server-box .server-tab .item-box .server-item-info .server-item-blank p.server-info-text {
+  font-size: 0.45rem;
+  line-height: 0.6rem;
+}
+
+.server-box .server-tab .item-box .server-item-info .server-item-blank {
+  height: 3.6rem;
+}
+
+.teacher-box {
+  overflow: hidden;
+}
+
+.teacher-box .teacher-content {
+  padding: 0 0.8rem;
+  text-align: center;
+}
+
+.teacher-box .teacher-content .teacher-item {
+  width: 50%;
+  height: 8rem;
+  margin-right: 0;
+  padding-right: 4px;
+  margin-bottom: 0.6rem;
+}
+
+.teacher-box .teacher-content .teacher-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.teacher-box .teacher-content .teacher-item:nth-of-type(even) {
+  top: 0;
+  padding-left: 4px;
+}
+
+.teacher-box .teacher-content .teacher-item:nth-of-type(even) .teacher-info {
+  left: 4px;
+}
+
+.teacher-box .teacher-content .teacher-item .teacher-info {
+  right: 4px;
+  width: auto;
+}
+
+.teacher-box .teacher-content .teacher-item .teacher-info .t-name {
+  font-size: 0.54rem;
+}
+
+.teacher-box .teacher-content .teacher-item .teacher-info .t-text {
+  font-size: 0.44rem;
+}
+
+.teacher-box .teacher-content .teacher-item .teacher-info .t-btn {
+  width: 2.1rem;
+  line-height: 0.6rem;
+  font-size: 0.4rem;
+  border-width: 1px;
+  border-radius: 0.2rem;
+}
+
+.m-student-box {
+  text-align: center;
+  padding: 0 0.8rem;
+}
+
+.m-student-box .m-student-item {
+  position: relative;
+  height: 7.6rem;
+  padding-top: 2rem;
+  box-sizing: border-box;
+  margin-bottom: 0.4rem;
+  background-color: #ffffff;
+  box-shadow: -1px -1px 2px rgba(236, 183, 183, 0.4);
+}
+
+.m-student-box .m-student-item .student-head {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  border: 2px solid #E9709B;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -1rem;
 }

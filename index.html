@@ -302,7 +302,7 @@
       <div class="video-content-box">
         <div class="video-container" id='video'>
         </div>
-        <div class="video-list">
+        <div class="video-list layui-hide-xs">
           <div class="video-list-title">
             <p class="title">视频介绍</p>
             <p class='title-text'>
@@ -336,8 +336,8 @@
         <p class='project-title-mintext'><span>Our Teacher</span></p>
         <p class='project-title ff-bg'>师资力量</p>
       </div>
-      <div class="teacher-content">
-        <div class='teacher-item'>
+      <div class="teacher-content layui-container">
+        <div class='teacher-item layui-col-xs6'>
           <img src="./images/teacher.png" alt="">
           <div class="teacher-info">
             <p class="t-name">兰老师</p>
@@ -347,7 +347,7 @@
             <div class="t-btn">了解更多</div>
           </div>
         </div>
-        <div class='teacher-item'>
+        <div class='teacher-item layui-col-xs6'>
           <img src="./images/teacher.png" alt="">
           <div class="teacher-info">
             <p class="t-name">兰老师</p>
@@ -357,7 +357,7 @@
             <div class="t-btn">了解更多</div>
           </div>
         </div>
-        <div class='teacher-item'>
+        <div class='teacher-item layui-col-xs6'>
           <img src="./images/teacher.png" alt="">
           <div class="teacher-info">
             <p class="t-name">兰老师</p>
@@ -367,7 +367,7 @@
             <div class="t-btn">了解更多</div>
           </div>
         </div>
-        <div class='teacher-item'>
+        <div class='teacher-item layui-col-xs6'>
           <img src="./images/teacher.png" alt="">
           <div class="teacher-info">
             <p class="t-name">兰老师</p>
@@ -377,7 +377,7 @@
             <div class="t-btn">了解更多</div>
           </div>
         </div>
-        <div class='teacher-item'>
+        <div class='teacher-item layui-col-xs6'>
           <img src="./images/teacher.png" alt="">
           <div class="teacher-info">
             <p class="t-name">兰老师</p>
@@ -395,7 +395,7 @@
         <p class='project-title-mintext'><span>Outstanding Student</span></p>
         <p class='project-title g-bg'>优秀案例</p>
       </div>
-      <div class="student-content">
+      <div class="student-content layui-hide-xs">
         <div class="student-item">
           <div class="student-card">
             <img class='student-head' src="./images/teacher.png" alt="">
@@ -457,6 +457,26 @@
           </div>
         </div>
       </div>
+      <!-- 移动端下的students -->
+      <div class="layui-container layui-hide-sm m-student-box">
+        <div class='layui-row layui-col-space10'>
+          <div class="layui-col-xs6 m-student-item">
+              <img class='student-head' src="./images/teacher.png" alt="">
+              <p class="student-name">王大丽</p>
+              <p class="student-text">年龄45岁，籍贯宁乡2018年在长沙兰百合学习月嫂育婴师课程，得到数次客户好评，目前薪资<b class='student-money'>4500</b></p>
+          </div>
+          <div class="layui-col-xs6 m-student-item">
+              <img class='student-head' src="./images/teacher.png" alt="">
+              <p class="student-name">王大丽</p>
+              <p class="student-text">年龄45岁，籍贯宁乡2018年在长沙兰百合学习月嫂育婴师课程，得到数次客户好评，目前薪资<b class='student-money'>4500</b></p>
+          </div>
+          <div class="layui-col-xs6 m-student-item">
+              <img class='student-head' src="./images/teacher.png" alt="">
+              <p class="student-name">王大丽</p>
+              <p class="student-text">年龄45岁，籍贯宁乡2018年在长沙兰百合学习月嫂育婴师课程，得到数次客户好评，目前薪资<b class='student-money'>4500</b></p>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
   <!-- footer -->
@@ -470,6 +490,7 @@
         <a href="">加盟咨询</a>
       </span>
     </div>
+  </div>
   </footer>
   <script src="./layui/layui.js"></script>
   <script type="text/javascript" src="./ckplayer/ckplayer.js"></script>
@@ -478,16 +499,26 @@
       var carousel = layui.carousel,
         element = layui.element,
         $ = layui.$
-
-      //建造实例
-      carousel.render({
-        elem: '#carousel'
-        , width: '100%' //设置容器宽度
-        , height: '4rem'
-        
-        //,anim: 'updown' //切换动画方式
-      });
-
+      var is_mobile =navigator.userAgent.toLowerCase().match(/(ipod|iphone|android|coolpad|mmp|smartphone|midp|wap|xoom|symbian|j2me|blackberry|wince)/i) !== null;    //进行userAgent匹配
+      if(is_mobile){
+        //建造实例
+        carousel.render({
+          elem: '#carousel'
+          , width: '100%' //设置容器宽度
+          , height: '6rem'
+          
+          //,anim: 'updown' //切换动画方式
+        });
+      }else{
+        //建造实例
+        carousel.render({
+          elem: '#carousel'
+          , width: '100%' //设置容器宽度
+          , height: '4rem'
+          
+          //,anim: 'updown' //切换动画方式
+        });
+      }
       $(".teacher-item").hover(function () {
         $(this).find('.teacher-info').addClass("layui-anim layui-anim-upbit");
       }, function () {
@@ -519,6 +550,8 @@
     });
   </script>
   <script src='./js/video.js'></script>
+  <script>
+  </script>
 </body>
 
 </html>

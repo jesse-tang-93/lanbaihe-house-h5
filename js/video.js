@@ -6,6 +6,8 @@ var videoObject = {
   container: '#video', //容器的ID或className
   variable: 'player',//播放函数名称
   poster:'../material/poster.jpg',//封面图片
+  mobileCkControls:true,//是否在移动端（包括ios）环境中显示控制栏
+  mobileAutoFull:false,//在移动端播放后是否按系统设置的全屏播放
   video: videoArr[videoIndex]
   
 };
@@ -18,6 +20,7 @@ function toNext(){
       player.newVideo({
         front:'toLast',
         autoplay:true,
+        mobileCkControls:true,//是否在移动端（包括ios）环境中显示控制栏
         video:videoArr[videoIndex]
       }); 
     }else{
@@ -25,6 +28,7 @@ function toNext(){
         front:'toLast',
         next:'toNext',
         autoplay:true,
+        mobileCkControls:true,//是否在移动端（包括ios）环境中显示控制栏
         video:videoArr[videoIndex]
       }); 
     } 
@@ -40,6 +44,7 @@ function toLast(){
       player.newVideo({
         next:'toNext',
         autoplay:true,
+        mobileCkControls:true,//是否在移动端（包括ios）环境中显示控制栏
         video:videoArr[videoIndex]
       }); 
     }else{
@@ -47,8 +52,10 @@ function toLast(){
         front:'toLast',
         next:'toNext',
         autoplay:true,
+        mobileCkControls:true,//是否在移动端（包括ios）环境中显示控制栏
         video:videoArr[videoIndex]
       });
     }
   }
 }
+
