@@ -8,7 +8,7 @@ $c66: #666666;
 $cff: #ffffff;
 /*小屏幕*/
 html{
-  font-size:28px;
+  font-size:27.4px;
 }
 body{
   background-color: #fff;
@@ -215,7 +215,10 @@ body{
   font-size: rem(54)
 }
 .teacher-box .teacher-content .teacher-item .teacher-info .t-text{
-  font-size: rem(44)
+  font-size: rem(44);
+  height: 80px;
+  text-overflow: clip;
+  overflow: hidden;
 }
 .teacher-box .teacher-content .teacher-item .teacher-info .t-btn{
   width: rem(210);
@@ -237,7 +240,15 @@ body{
     box-sizing: border-box;
     margin-bottom: rem(120);
     background-color: #ffffff;
+    .student-name{
+      margin-bottom: rem(15);
+    }
+    .student-text{
+      height: 96px;
+      overflow: hidden;
+    }
     .student-head{
+      background-color: #fff;
       width: rem(200);
       height: rem(200);
       border-radius: 50%;

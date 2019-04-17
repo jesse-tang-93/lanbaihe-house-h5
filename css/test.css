@@ -607,6 +607,8 @@ img {
   padding: 0 0.14rem;
   margin-bottom: 0.3rem;
   text-align: left;
+  height: 125px;
+  overflow: hidden;
 }
 
 .teacher-box .teacher-content .teacher-item .teacher-info .t-btn {

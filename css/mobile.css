@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*小屏幕*/
 html {
-  font-size: 28px;
+  font-size: 27.4px;
 }
 
 body {
@@ -248,6 +248,9 @@ body {
 
 .teacher-box .teacher-content .teacher-item .teacher-info .t-text {
   font-size: 0.44rem;
+  height: 80px;
+  text-overflow: clip;
+  overflow: hidden;
 }
 
 .teacher-box .teacher-content .teacher-item .teacher-info .t-btn {
@@ -274,7 +277,17 @@ body {
   background-color: #ffffff;
 }
 
+.m-student-box .m-student-item .student-name {
+  margin-bottom: 0.15rem;
+}
+
+.m-student-box .m-student-item .student-text {
+  height: 96px;
+  overflow: hidden;
+}
+
 .m-student-box .m-student-item .student-head {
+  background-color: #fff;
   width: 2rem;
   height: 2rem;
   border-radius: 50%;
