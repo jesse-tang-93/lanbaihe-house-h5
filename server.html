@@ -16,6 +16,7 @@
     content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
   <link rel="stylesheet" href="./layui/css/layui.css">
   <link rel="stylesheet" href="./css/server.css">
+  <link rel="stylesheet" href="./css/mobile.css" media="screen and (max-width: 800px)">
   <script>
     (function (window, document) {
       function resize() {
@@ -48,47 +49,53 @@
     <![endif]-->
   <!-- 正文开始 -->
   <div class="top-box">
-    <div class='top-tips-nav layui-clear'>
-      <div class="hello-text fl"> 欢迎来到兰百合家政～</div>
-      <ul class="layui-nav tip-nav fr" lay-filter="">
-        <li class="layui-nav-item" lay-unselect><a href="">网站地图</a></li>
-        <li class="layui-nav-item" lay-unselect><a href="">收藏本站</a></li>
-        <li class="layui-nav-item" lay-unselect><a href="">在线留言</a></li>
-        <li class="layui-nav-item end-item" lay-unselect><a href="">联系我们</a></li>
+      <div class='top-tips-nav layui-clear'>
+        <div class="hello-text fl"> 欢迎来到兰百合家政～</div>
+        <ul class="layui-nav tip-nav fr" lay-filter="">
+          <li class="layui-nav-item" lay-unselect><a href="">网站地图</a></li>
+          <li class="layui-nav-item" lay-unselect><a href="">收藏本站</a></li>
+          <li class="layui-nav-item" lay-unselect><a href="">在线留言</a></li>
+          <li class="layui-nav-item end-item" lay-unselect><a href="">联系我们</a></li>
+        </ul>
+      </div> <!-- end-top-nav -->
+      <hr class="top-line">
+      <div class="top-icon-box">
+        <div class="tel-info-box  box-style">
+          <img src="./images/tel-icon.png" alt="联系电话">
+          <ul class="tel-box">
+            <li class="tel-item">服务热线：<span>0731-83387873</span></li>
+            <li class="tel-item">客户专线：<span>15211039800</span></li>
+          </ul>
+        </div>
+        <div class="logo">
+          <img src="./images/logo.png" alt="logo">
+        </div>
+        <div class="local-info-box box-style">
+          <img src="./images/local-icon.png" alt="联系电话">
+          <ul class="tel-box">
+            <li class="tel-item">长沙市岳麓区银盆南路<br> 20号溁湾镇新外滩</li>
+          </ul>
+        </div>
+      </div>
+      <!-- nav -->
+      <div class='layui-hide-md mobile-nav'>
+        <img src="./images/logo.png" alt="" class='mobile-logo'>
+        <button>
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+      <ul class="layui-nav nav-box" lay-filter="">
+        <li class="layui-nav-item active" lay-unselect><a href="">首页</a></li>
+        <li class="layui-nav-item" lay-unselect><a href="./server.html">服务内容</a></li>
+        <li class="layui-nav-item" lay-unselect><a href="">培训项目</a></li>
+        <li class="layui-nav-item" lay-unselect>
+          <a href="javascript:;">教学视频</a>
+        </li>
+        <li class="layui-nav-item" lay-unselect><a href="">师资力量</a></li>
+        <li class="layui-nav-item" lay-unselect><a href="">学员风采</a></li>
+        <li class="layui-nav-item end-item" lay-unselect><a href="./about_us.html">关于我们</a></li>
       </ul>
-    </div> <!-- end-top-nav -->
-    <hr class="top-line">
-    <div class="top-icon-box">
-      <div class="tel-info-box  box-style">
-        <img src="./images/tel-icon.png" alt="联系电话">
-        <ul class="tel-box">
-          <li class="tel-item">服务热线：<span>0731-83387873</span></li>
-          <li class="tel-item">客户专线：<span>15211039800</span></li>
-        </ul>
-      </div>
-      <div class="logo">
-        <img src="./images/logo.png" alt="logo">
-      </div>
-      <div class="local-info-box box-style">
-        <img src="./images/local-icon.png" alt="联系电话">
-        <ul class="tel-box">
-          <li class="tel-item">长沙市岳麓区银盆南路<br> 20号溁湾镇新外滩</li>
-        </ul>
-      </div>
-    </div>
-    <!-- nav -->
-    <ul class="layui-nav nav-box" lay-filter="">
-      <li class="layui-nav-item" lay-unselect><a href="./index.html">首页</a></li>
-      <li class="layui-nav-item active" lay-unselect><a href="">服务内容</a></li>
-      <li class="layui-nav-item" lay-unselect><a href="">培训项目</a></li>
-      <li class="layui-nav-item" lay-unselect>
-        <a href="javascript:;">教学视频</a>
-      </li>
-      <li class="layui-nav-item" lay-unselect><a href="">师资力量</a></li>
-      <li class="layui-nav-item" lay-unselect><a href="">学员风采</a></li>
-      <li class="layui-nav-item end-item" lay-unselect><a href="">关于我们</a></li>
-    </ul>
-  </div><!-- end top-->
+    </div><!-- end top-->
   <div class="container">
     <!-- about-us-banner -->
     <div class="server-banner-box">
@@ -143,6 +150,23 @@
     layui.use(['element', 'jquery'], function () {
       var element = layui.element,
         $ = layui.$
+             //导航切换
+     var btn = $('.mobile-nav').children('button')
+      ,spa = btn.children('span')
+      ,ul = $('.top-box').children('.layui-nav');
+      btn.on('click', function(){
+        if(!$(spa[0]).hasClass('spa1')){
+          spa[0].className = 'spa1';
+          spa[1].style.display = 'none';
+          spa[2].className = 'spa3';
+          $('.top-box')[0].style.height = 80 + ul[0].offsetHeight + 'px';
+        }else{
+          spa[0].className = '';
+          spa[1].style.display = 'block';
+          spa[2].className = '';
+          $('.top-box')[0].style.height = 70 + 'px';
+        }
+      });
     });
   </script>
 </body>

@@ -5,10 +5,12 @@ html {
 }
 
 body {
+  background-color: #fff;
   padding-top: 70px;
 }
 
 .top-box {
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.05);
   height: 70px;
   overflow: hidden;
   transition: 0.3s;
@@ -259,16 +261,17 @@ body {
 .m-student-box {
   text-align: center;
   padding: 0 0.8rem;
+  margin-top: 2rem;
 }
 
 .m-student-box .m-student-item {
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.05);
   position: relative;
   height: 7.6rem;
-  padding-top: 2rem;
+  padding: 2rem 10px 0;
   box-sizing: border-box;
-  margin-bottom: 0.4rem;
+  margin-bottom: 1.2rem;
   background-color: #ffffff;
-  box-shadow: -1px -1px 2px rgba(236, 183, 183, 0.4);
 }
 
 .m-student-box .m-student-item .student-head {
@@ -280,4 +283,109 @@ body {
   left: 50%;
   transform: translateX(-50%);
   top: -1rem;
+}
+
+.m-student-box .m-student-item .student-group {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 10px;
+  font-size: 0.55rem;
+  color: #7f2974;
+}
+
+.server-banner-box, .us-banner-box {
+  height: 4rem;
+}
+
+.server-banner-box span, .us-banner-box span {
+  font-size: 0.38rem;
+}
+
+.server-banner-box p, .us-banner-box p {
+  font-size: 0.56rem;
+}
+
+.server-container {
+  padding: 0.8rem 0.3rem;
+  overflow: hidden;
+}
+
+.server-container .server-nav {
+  float: left;
+  width: 20%;
+  margin-right: 0;
+  padding-right: 0.3rem;
+  box-sizing: border-box;
+}
+
+.server-container .server-nav ul li {
+  font-size: 0.5rem;
+}
+
+.server-container .server-content {
+  float: right;
+  width: 80%;
+  font-size: 0.46rem;
+  padding: 0.3rem;
+}
+
+.server-container .server-content img {
+  max-width: 100%;
+}
+
+.us-container {
+  padding: 0 0.6rem;
+}
+
+.us-info-title {
+  font-size: 0.6rem;
+  line-height: 1.3rem;
+}
+
+.address-box {
+  padding: 0.6rem;
+}
+
+.address-box img {
+  width: 100%;
+}
+
+.address-box .address-img {
+  display: block;
+  width: 100%;
+}
+
+.address-box .company-info-box {
+  margin-top: 0.8rem;
+  display: block;
+}
+
+.address-box .company-info-box p.info-title {
+  width: 100%;
+  font-size: 0.55rem;
+}
+
+.address-box .company-info-box ul li p {
+  font-size: 0.52rem;
+}
+
+.address-box .company-info-box ul li i {
+  width: 0.8rem;
+  margin-right: 0.3rem;
+}
+
+.address-box .company-info-box ul li i.icon-tel {
+  height: 0.94rem;
+  background-size: contain;
+}
+
+.address-box .company-info-box ul li i.icon-loc {
+  height: 0.74rem;
+  background-size: contain;
+}
+
+.address-box .company-info-box ul li i.icon-phone, .address-box .company-info-box ul li i.icon-email, .address-box .company-info-box ul li i.icon-www {
+  height: 0.68rem;
+  background-size: contain;
 }

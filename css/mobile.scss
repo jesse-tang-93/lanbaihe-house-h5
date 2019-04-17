@@ -11,10 +11,12 @@ html{
   font-size:28px;
 }
 body{
+  background-color: #fff;
   padding-top: 70px;
 }
 // 隐藏顶部小导航
 .top-box{
+  box-shadow: 0 3px 3px 0 rgba(0,0,0,0.05);
   height: 70px;
   overflow: hidden;
   transition: 0.3s;
@@ -226,14 +228,15 @@ body{
 .m-student-box{
   text-align: center;
   padding: 0 rem(80);
+  margin-top: rem(200);
   .m-student-item{
+    box-shadow: 0 3px 3px 0 rgba(0,0,0,0.05);
     position: relative;
     height: rem(760);
-    padding-top: rem(200);
+    padding: rem(200) 10px 0;
     box-sizing: border-box;
-    margin-bottom: rem(40);
+    margin-bottom: rem(120);
     background-color: #ffffff;
-    box-shadow: -1px -1px 2px rgba(236, 183, 183, 0.4);
     .student-head{
       width: rem(200);
       height: rem(200);
@@ -244,5 +247,92 @@ body{
       transform: translateX(-50%);
       top:rem(-100); 
     }
+    .student-group{
+      position: absolute;
+      left:0;
+      right: 0;
+      bottom:10px;
+      font-size: rem(55);
+      color: $main-color;
+    }
+  }
+}
+// 服务内容页面
+.server-banner-box,.us-banner-box{
+  height: rem(400);
+  span{
+    font-size: rem(38)
+  }
+  p{
+    font-size: rem(56)
+  }
+}
+.server-container{
+  padding: rem(80) rem(30);
+  overflow: hidden;
+}
+.server-container .server-nav{
+  float: left;
+  width: 20%;
+  margin-right: 0;
+  padding-right: rem(30);
+  box-sizing: border-box;
+}
+.server-container .server-nav ul li{
+  font-size: rem(50)
+}
+.server-container .server-content {
+  float: right;
+  width: 80%;
+  font-size: rem(46);
+  padding: rem(30);
+  img{
+    max-width: 100%;
+  }
+}
+
+// 关于我们页面
+.us-container{
+ padding: 0 rem(60);
+}
+.us-info-title{
+  font-size: rem(60);
+  line-height: rem(130);
+}
+.address-box{
+  padding:rem(60);
+  img{
+    width: 100%;
+  }
+  .address-img{
+    display: block;
+    width: 100%;
+  }
+  .company-info-box{
+    margin-top: rem(80);
+    display: block;
+    p.info-title{
+      width: 100%;
+      font-size: rem(55);
+    }
+  }
+}
+.address-box .company-info-box ul li p{
+  font-size: rem(52);
+}
+.address-box .company-info-box ul li i{
+  width: rem(80);
+  margin-right: rem(30);
+  &.icon-tel{
+    height: rem(94);
+    background-size: contain;
+  }
+  &.icon-loc{
+    height: rem(74);
+    background-size: contain;
+  }
+  &.icon-phone,&.icon-email,&.icon-www{
+    height: rem(68);
+    background-size: contain;
   }
 }
