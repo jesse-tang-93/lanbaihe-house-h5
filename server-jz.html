@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge，chrome=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>服务内容-涉外家政</title>
+  <meta name="description" content="" />
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+  <link rel="stylesheet" href="./layui/css/layui.css">
+  <link rel="stylesheet" href="./css/server.css">
+  <link rel="stylesheet" href="./css/mobile.css" media="screen and (max-width: 800px)">
+  <script>
+    var rootSize
+    if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
+      rootSize = 1366
+    } else {
+      rootSize = 1920
+    }
+    (function (window, document) {
+      function resize() {
+        var ww = window.innerWidth;
+        if (ww > window.screen.width) {
+          window.requestAnimationFrame(resize);
+        } else {
+          if (ww > rootSize) ww = rootSize;
+          // 下面代码按照比例为100px = 1rem，此处一定要同pxToRem的转换比例
+          document.documentElement.style.fontSize = ww * 100 / rootSize + 'px';
+        }
+      }
+      if (document.readyState !== 'loading') {
+        resize();
+      } else {
+        document.addEventListener('DOMContentLoaded', resize);
+      }
+      window.addEventListener('resize', resize);
+    })(window, document);
+  </script>
+</head>
+
+<body>
+  <!-- 低版本浏览器提示 -->
+  <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
+  <!-- 正文开始 -->
+  <div class="top-box">
+    <div class='top-tips-nav layui-clear'>
+      <div class="hello-text fl"> 欢迎来到兰百合家政～</div>
+      <ul class="layui-nav tip-nav fr" lay-filter="">
+        <li class="layui-nav-item" lay-unselect><a href="">网站地图</a></li>
+        <li class="layui-nav-item" lay-unselect><a href="">收藏本站</a></li>
+        <li class="layui-nav-item" lay-unselect><a href="">在线留言</a></li>
+        <li class="layui-nav-item end-item" lay-unselect><a href="">联系我们</a></li>
+      </ul>
+    </div> <!-- end-top-nav -->
+    <hr class="top-line">
+    <div class="top-icon-box">
+      <div class="tel-info-box  box-style">
+        <img src="./images/tel-icon.png" alt="联系电话">
+        <ul class="tel-box">
+          <li class="tel-item">服务热线：<span>0731-83387873</span></li>
+          <li class="tel-item">客户专线：<span>15211039800</span></li>
+        </ul>
+      </div>
+      <div class="logo">
+        <img src="./images/logo.png" alt="logo">
+      </div>
+      <div class="local-info-box box-style">
+        <img src="./images/local-icon.png" alt="联系电话">
+        <ul class="tel-box">
+          <li class="tel-item">长沙市岳麓区银盆南路<br> 20号溁湾镇新外滩</li>
+        </ul>
+      </div>
+    </div>
+    <!-- nav -->
+    <div class='layui-hide-md mobile-nav'>
+      <img src="./images/logo.png" alt="" class='mobile-logo'>
+      <button>
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <ul class="layui-nav nav-box" lay-filter="">
+      <li class="layui-nav-item active" lay-unselect><a href="">首页</a></li>
+      <li class="layui-nav-item" lay-unselect><a href="./server.html">服务内容</a></li>
+      <li class="layui-nav-item" lay-unselect><a href="">培训项目</a></li>
+      <li class="layui-nav-item" lay-unselect>
+        <a href="javascript:;">教学视频</a>
+      </li>
+    </ul>
+  </div><!-- end top-->
+  <div class="server-banner-box">
+    <span>Service</span>
+    <p>服务内容</p>
+  </div>
+  <div class="server-container">
+    <!-- server-nav -->
+    <div class="server-nav-new">
+      <div class='server-nav-item-box'>
+        <div class='nav-item'>
+          <a href="./server.html">
+            <div class="bg-box"></div>
+            <img class='item-img' src="./images/server-nav-bg-1.png" alt="">
+            <div class="item-info-box">
+              <img src="./images/server-icon-1.png" alt="" class='item-icon icon-1'>
+              <p class='item-name'>月嫂</p>
+            </div>
+          </a>
+        </div>
+        <div class="block-box"></div>
+        <div class='nav-item'>
+          <div class="bg-box"></div>
+          <img class='item-img' style='transform: rotate(-45deg) scale(1.7);' src="./images/server-detail-01.jpg"
+            alt="">
+          <div class="item-info-box">
+            <img src="./images/server-icon-2.png" alt="" class='item-icon icon-2'>
+            <p class='item-name'>育婴师</p>
+          </div>
+        </div>
+        <div class="block-box"></div>
+        <div class='nav-item'>
+          <div class="bg-box"></div>
+          <img class='item-img' style='transform: rotate(-45deg) scale(1.7);' src="./images/server-6.png" alt="">
+          <div class="item-info-box">
+            <img src="./images/server-icon-3.png" alt="" class='item-icon icon-3'>
+            <p class='item-name'>催乳师</p>
+          </div>
+        </div>
+        <div class="block-box"></div>
+        <div class='nav-item'>
+          <a href="./server-bm.html">
+            <div class="bg-box"></div>
+            <img class='item-img' src="./images/server-1.png" alt="">
+            <div class="item-info-box">
+              <img src="./images/server-icon-4.png" alt="" class='item-icon icon-4'>
+              <p class='item-name'>保姆</p>
+            </div>
+          </a>
+        </div>
+        <div class="block-box"></div>
+        <div class='nav-item'>
+          <a href="./server-bj.html">
+            <div class="bg-box"></div>
+            <img class='item-img' src="./images/server-1.png" alt="">
+            <div class="item-info-box">
+              <img src="./images/server-icon-5.png" alt="" class='item-icon icon-5'>
+              <p class='item-name'>保洁</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <!-- 第二行 -->
+      <div class='server-nav-item-box second-box'>
+        <div class='nav-item'>
+          <a href="./server-hg.html">
+            <div class="bg-box"></div>
+            <img class='item-img' style='transform: rotate(-45deg) scale(1.7);' src="./images/server-1.png" alt="">
+            <div class="item-info-box">
+              <img src="./images/server-icon-6.png" alt="" class='item-icon icon-6'>
+              <p class='item-name'>护工</p>
+            </div>
+          </a>
+        </div>
+        <div class="block-box"></div>
+        <div class='nav-item active'>
+          <a href="./server-jz.html">
+            <div class="bg-box"></div>
+            <img class='item-img' style='transform: rotate(-45deg) scale(1.7);' src="./images/server-9.png" alt="">
+            <div class="item-info-box">
+              <img src="./images/server-icon-7.png" alt="" class='item-icon icon-7'>
+              <p class='item-name'>涉外家政</p>
+            </div>
+          </a>
+        </div>
+        <div class="block-box"></div>
+        <div class='nav-item'>
+          <a href="./server-dz.html">
+            <div class="bg-box"></div>
+            <img class='item-img' style='transform: rotate(-45deg) scale(1.3);margin-left: 40px'
+              src="./images/server-8.jpg" alt="">
+            <div class="item-info-box">
+              <img src="./images/server-icon-8.png" alt="" class='item-icon icon-8'>
+              <p class='item-name'>私人订制</p>
+            </div>
+          </a>
+        </div>
+        <div class="block-box"></div>
+        <div class='nav-item'>
+          <a href="./server-zl.html">
+            <div class="bg-box"></div>
+            <img class='item-img' style='transform: rotate(-45deg) scale(1);' src="./images/server-7.jpg" alt="">
+            <div class="item-info-box">
+              <img src="./images/server-icon-9.png" alt="" class='item-icon icon-9'>
+              <p class='item-name'>全屋整理</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- server-detail-box -->
+    <div class="server-detail-box hg">
+      <div class='hg-detail-container'>
+        <p class="server-detail-title">涉外家政服务</p>
+        <p class='hg-info-text'>
+          出国家政服务 <br>
+          服务对象包括美国、加拿大、英国、澳大利亚、新西兰、爱尔兰等国家的家庭。
+        </p>
+        <div class='hg-img-box'>
+          <img src="./images/jz-1.png" alt="" class='hg-img-1'>
+          <img src="./images/jz-2.png" alt="" class='hg-img-2'>
+        </div>
+        <div class='min-info'>
+          <p class="info-title">
+            1.出国月嫂
+          </p>
+          有出国签证、月嫂证、健康证的涉外月嫂，具备良好的专业技能、心里素质和职业道德
+          <p class="info-title">
+            2.出国育婴师
+          </p>
+          有出国签证、育婴师证、健康证的涉外育婴师，丰富的育婴经验结合当地的育儿理念，更好的抚育您的宝贝
+          <p class="info-title">
+            3.出国住家保姆
+          </p>
+          有出国签证、健康证的涉外住家保姆，为您推荐专业技能与服务意识相结合，良好的人品与高素质
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="hg-detail-second">
+    <div class="second-img-box">
+      <img src="./images/jz-3.png" alt="">
+      <img src="./images/jz-4.png" alt="">
+      <img src="./images/jz-5.png" alt="">
+    </div>
+    <p class="server-bz">
+      洋妞到家：<br>
+      外籍留学生利用暑期兼职，可进入家庭，与您的孩子全英文沟通，陪伴宝宝度过一个愉快的暑期，把外教带回家。
+    </p>
+  </div>
+  <!-- footer -->
+  <footer>
+    <img src="./images/bottom-title.png" alt="" class="bottom-title">
+    <p>版权所有©：长沙兰百合科技服务有限公司</p>
+    <div class="bottom-nav">
+      <span class="layui-breadcrumb" lay-separator="|">
+        <a href="">找寻服务</a>
+        <a href="">联系我们</a>
+        <a href="">加盟咨询</a>
+      </span>
+    </div>
+  </footer>
+  <script src="./layui/layui.js"></script>
+  <script>
+    layui.use(['element', 'jquery'], function () {
+      var element = layui.element,
+        $ = layui.$
+      //导航切换
+      var btn = $('.mobile-nav').children('button')
+        , spa = btn.children('span')
+        , ul = $('.top-box').children('.layui-nav');
+      btn.on('click', function () {
+        if (!$(spa[0]).hasClass('spa1')) {
+          spa[0].className = 'spa1';
+          spa[1].style.display = 'none';
+          spa[2].className = 'spa3';
+          $('.top-box')[0].style.height = 80 + ul[0].offsetHeight + 'px';
+        } else {
+          spa[0].className = '';
+          spa[1].style.display = 'block';
+          spa[2].className = '';
+          $('.top-box')[0].style.height = 70 + 'px';
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>

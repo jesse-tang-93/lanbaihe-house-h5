@@ -18,15 +18,21 @@
   <link rel="stylesheet" href="./css/server.css">
   <link rel="stylesheet" href="./css/mobile.css" media="screen and (max-width: 800px)">
   <script>
+    var rootSize
+    if ((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i))) {
+      rootSize = 1366
+    } else {
+      rootSize = 1920
+    }
     (function (window, document) {
       function resize() {
         var ww = window.innerWidth;
         if (ww > window.screen.width) {
           window.requestAnimationFrame(resize);
         } else {
-          if (ww > 1366) ww = 1366;
+          if (ww > rootSize) ww = rootSize;
           // 下面代码按照比例为100px = 1rem，此处一定要同pxToRem的转换比例
-          document.documentElement.style.fontSize = ww * 100 / 1366 + 'px';
+          document.documentElement.style.fontSize = ww * 100 / rootSize + 'px';
         }
       }
       if (document.readyState !== 'loading') {
@@ -49,89 +55,284 @@
     <![endif]-->
   <!-- 正文开始 -->
   <div class="top-box">
-      <div class='top-tips-nav layui-clear'>
-        <div class="hello-text fl"> 欢迎来到兰百合家政～</div>
-        <ul class="layui-nav tip-nav fr" lay-filter="">
-          <li class="layui-nav-item" lay-unselect><a href="">网站地图</a></li>
-          <li class="layui-nav-item" lay-unselect><a href="">收藏本站</a></li>
-          <li class="layui-nav-item" lay-unselect><a href="">在线留言</a></li>
-          <li class="layui-nav-item end-item" lay-unselect><a href="">联系我们</a></li>
-        </ul>
-      </div> <!-- end-top-nav -->
-      <hr class="top-line">
-      <div class="top-icon-box">
-        <div class="tel-info-box  box-style">
-          <img src="./images/tel-icon.png" alt="联系电话">
-          <ul class="tel-box">
-            <li class="tel-item">服务热线：<span>0731-83387873</span></li>
-            <li class="tel-item">客户专线：<span>15211039800</span></li>
-          </ul>
-        </div>
-        <div class="logo">
-          <img src="./images/logo.png" alt="logo">
-        </div>
-        <div class="local-info-box box-style">
-          <img src="./images/local-icon.png" alt="联系电话">
-          <ul class="tel-box">
-            <li class="tel-item">长沙市岳麓区银盆南路<br> 20号溁湾镇新外滩</li>
-          </ul>
-        </div>
-      </div>
-      <!-- nav -->
-      <div class='layui-hide-md mobile-nav'>
-        <img src="./images/logo.png" alt="" class='mobile-logo'>
-        <button>
-          <span></span><span></span><span></span>
-        </button>
-      </div>
-      <ul class="layui-nav nav-box" lay-filter="">
-        <li class="layui-nav-item active" lay-unselect><a href="">首页</a></li>
-        <li class="layui-nav-item" lay-unselect><a href="./server.html">服务内容</a></li>
-        <li class="layui-nav-item" lay-unselect><a href="">培训项目</a></li>
-        <li class="layui-nav-item" lay-unselect>
-          <a href="javascript:;">教学视频</a>
-        </li>
-        <li class="layui-nav-item" lay-unselect><a href="">师资力量</a></li>
-        <li class="layui-nav-item" lay-unselect><a href="">学员风采</a></li>
-        <li class="layui-nav-item end-item" lay-unselect><a href="./about_us.html">关于我们</a></li>
+    <div class='top-tips-nav layui-clear'>
+      <div class="hello-text fl"> 欢迎来到兰百合家政～</div>
+      <ul class="layui-nav tip-nav fr" lay-filter="">
+        <li class="layui-nav-item" lay-unselect><a href="">网站地图</a></li>
+        <li class="layui-nav-item" lay-unselect><a href="">收藏本站</a></li>
+        <li class="layui-nav-item" lay-unselect><a href="">在线留言</a></li>
+        <li class="layui-nav-item end-item" lay-unselect><a href="">联系我们</a></li>
       </ul>
-    </div><!-- end top-->
-  <div class="container">
-    <!-- about-us-banner -->
-    <div class="server-banner-box">
-      <span>Service</span>
-      <p>服务内容</p>
-    </div>
-    <div class="server-container">
-      <div class="server-nav">
-        <p class="nav-line"></p>
-        <ul>
-          <li class="nav-title">母婴服务</li>
-          <li>保姆</li>
-          <li>护工</li>
-          <li>保洁</li>
-          <li class="nav-title">家政服务</li>
-          <li>月嫂</li>
-          <li>催乳师</li>
-          <li>育婴师</li>
-          <li class="nav-title">高端家政服务</li>
-          <li class='active'>全屋整理</li>
-          <li>私人订制</li>
-          <li>涉外家政</li>
+    </div> <!-- end-top-nav -->
+    <hr class="top-line">
+    <div class="top-icon-box">
+      <div class="tel-info-box  box-style">
+        <img src="./images/tel-icon.png" alt="联系电话">
+        <ul class="tel-box">
+          <li class="tel-item">服务热线：<span>0731-83387873</span></li>
+          <li class="tel-item">客户专线：<span>15211039800</span></li>
         </ul>
       </div>
-      <div class="server-content">
-
-          衣橱整理师行业随着十三亿中国人对提升着装品位及化妆品位有需求的消费群越来越大，衣橱整理师的市场需求将不断扩大，其特点是投资小、收入高、社会地位高、面向高端顾客群体，目前市场需求呈逐渐扩大趋势，而从业专业人员极为紧缺。
-          衣橱整理师主要工作和任务就是根据客户情况定制整理方案，协助客户解决收纳整理问题。
-          衣橱整理师属自由行业，可全职也可兼职衣橱整理按次收费，根据地域的不同和每次整理衣物数量的多少而异，市场价格在800-3000元/次。著名的职业衣橱整理师一次收费可达2万。
-          衣橱整理师是新兴职业现在全国职业从事的人不超过100位，在中国很多地区都是属于空白市场，而在国外早已经是一个成熟的职业，已经细分到时间整理，资料整理，资产整理，杂物整理，并且在国外这样的一个服务基本在每个家庭都是需要的，而在中国大多数人家里都存在布局不合理，杂物泛滥，被恶劣的环境所困扰，所以非常需要这样的一个服务，但是人们都还不知道有这样的一个服务，有专业人士对中国整理市的预估3年后中国的整理师会蓬勃的发展，在走向成熟，所以现在还在萌芽期，现在走在前面的人相对发展机会也比较大。
-          我们分为个人体提升班和职业衣橱整理班
-          个人提升培训一天，职业培训四天！全日制授课，整个培训以落地式，实践式，实操形式一对一指导培训为主哦！
-          理论与实操相结合，保证您能够学以致用，并且我们提供终身的免费复训服务和终身免费咨询服务，如果您在回去开发客户服务客户或者在做市场遇到什么问题或难题您可以随时跟我们公司哦！我们提供一些列的成熟的指导建议。
-                                  
+      <div class="logo">
+        <img src="./images/logo.png" alt="logo">
+      </div>
+      <div class="local-info-box box-style">
+        <img src="./images/local-icon.png" alt="联系电话">
+        <ul class="tel-box">
+          <li class="tel-item">长沙市岳麓区银盆南路<br> 20号溁湾镇新外滩</li>
+        </ul>
       </div>
     </div>
+    <!-- nav -->
+    <div class='layui-hide-md mobile-nav'>
+      <img src="./images/logo.png" alt="" class='mobile-logo'>
+      <button>
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <ul class="layui-nav nav-box" lay-filter="">
+      <li class="layui-nav-item active" lay-unselect><a href="">首页</a></li>
+      <li class="layui-nav-item" lay-unselect><a href="./server.html">服务内容</a></li>
+      <li class="layui-nav-item" lay-unselect><a href="">培训项目</a></li>
+      <li class="layui-nav-item" lay-unselect>
+        <a href="javascript:;">教学视频</a>
+      </li>
+    </ul>
+  </div><!-- end top-->
+  <div class="server-banner-box">
+    <span>Service</span>
+    <p>服务内容</p>
+  </div>
+  <div class="server-container">
+    <!-- server-nav -->
+    <div class="server-nav-new">
+      <div class='server-nav-item-box'>
+        <div class='nav-item active'>
+          <a href="./server.html">
+            <div class="bg-box"></div>
+            <img class='item-img' src="./images/server-nav-bg-1.png" alt="">
+            <div class="item-info-box">
+              <img src="./images/server-icon-1.png" alt="" class='item-icon icon-1'>
+              <p class='item-name'>月嫂</p>
+            </div>
+          </a>
+        </div>
+        <div class="block-box"></div>
+        <div class='nav-item'>
+          <div class="bg-box"></div>
+          <img class='item-img' style='transform: rotate(-45deg) scale(1.7);' src="./images/server-detail-01.jpg"
+            alt="">
+          <div class="item-info-box">
+            <img src="./images/server-icon-2.png" alt="" class='item-icon icon-2'>
+            <p class='item-name'>育婴师</p>
+          </div>
+        </div>
+        <div class="block-box"></div>
+        <div class='nav-item'>
+          <div class="bg-box"></div>
+          <img class='item-img' style='transform: rotate(-45deg) scale(1.7);' src="./images/server-6.png" alt="">
+          <div class="item-info-box">
+            <img src="./images/server-icon-3.png" alt="" class='item-icon icon-3'>
+            <p class='item-name'>催乳师</p>
+          </div>
+        </div>
+        <div class="block-box"></div>
+        <div class='nav-item'>
+          <a href="./server-bm.html">
+            <div class="bg-box"></div>
+            <img class='item-img' src="./images/server-1.png" alt="">
+            <div class="item-info-box">
+              <img src="./images/server-icon-4.png" alt="" class='item-icon icon-4'>
+              <p class='item-name'>保姆</p>
+            </div>
+          </a>
+        </div>
+        <div class="block-box"></div>
+        <div class='nav-item'>
+          <a href="./server-bj.html">
+            <div class="bg-box"></div>
+            <img class='item-img' src="./images/server-1.png" alt="">
+            <div class="item-info-box">
+              <img src="./images/server-icon-5.png" alt="" class='item-icon icon-5'>
+              <p class='item-name'>保洁</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <!-- 第二行 -->
+      <div class='server-nav-item-box second-box'>
+        <div class='nav-item'>
+          <a href="./server-hg.html">
+            <div class="bg-box"></div>
+            <img class='item-img' style='transform: rotate(-45deg) scale(1.7);' src="./images/server-1.png" alt="">
+            <div class="item-info-box">
+              <img src="./images/server-icon-6.png" alt="" class='item-icon icon-6'>
+              <p class='item-name'>护工</p>
+            </div>
+          </a>
+        </div>
+        <div class="block-box"></div>
+        <div class='nav-item'>
+          <a href="./server-jz.html">
+            <div class="bg-box"></div>
+            <img class='item-img' style='transform: rotate(-45deg) scale(1.7);' src="./images/server-9.png" alt="">
+            <div class="item-info-box">
+              <img src="./images/server-icon-7.png" alt="" class='item-icon icon-7'>
+              <p class='item-name'>涉外家政</p>
+            </div>
+          </a>
+        </div>
+        <div class="block-box"></div>
+        <div class='nav-item'>
+          <a href="./server-dz.html">
+            <div class="bg-box"></div>
+            <img class='item-img' style='transform: rotate(-45deg) scale(1.3);margin-left: 40px'
+              src="./images/server-8.jpg" alt="">
+            <div class="item-info-box">
+              <img src="./images/server-icon-8.png" alt="" class='item-icon icon-8'>
+              <p class='item-name'>私人订制</p>
+            </div>
+          </a>
+        </div>
+        <div class="block-box"></div>
+        <div class='nav-item'>
+          <a href="./server-zl.html">
+            <div class="bg-box"></div>
+            <img class='item-img' style='transform: rotate(-45deg) scale(1);' src="./images/server-7.jpg" alt="">
+            <div class="item-info-box">
+              <img src="./images/server-icon-9.png" alt="" class='item-icon icon-9'>
+              <p class='item-name'>全屋整理</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- server-detail-box -->
+    <div class="server-detail-box yuesao">
+      <div class='yuesao-detail-container'>
+        <p class="server-detail-title">兰百合月嫂服务星级价格</p>
+        <table class="layui-table" lay-skin='nob' style="table-layout: fixed">
+          <!-- <colgroup>
+              <col width="78rem">
+              <col width="57rem">
+              <col width="345rem">
+              <col width="160rem">
+              <col>
+            </colgroup> -->
+          <thead>
+            <tr>
+              <th style="width:1.16rem;" class='pl-td'>级别</th>
+              <th style="width:0.89rem;">价格</th>
+              <th style="width:3.70rem;" class="server-tablie-title">服务内容</th>
+              <th style="width:1.85rem;">增加专业服务技能</th>
+              <th>客户好评次数</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class='pl-td'>普通</td>
+              <td class='money-td'>5800</td>
+              <td class='server-detail-container'>
+                新生儿生活照料：健康数据管理、夜间照料、沐浴、脐带护理、大小便观察、红臀预防和护理、婴儿房间用品清洁。抚触、黄疸、湿疹护理。产妇专业护理：产妇恶露观察以及消毒、母乳喂养指导。</td>
+              <td>/</td>
+              <td>0～3次</td>
+            </tr>
+            <tr>
+              <td class='pl-td'>一星</td>
+              <td class='money-td'>6800</td>
+              <td class='server-detail-container'>
+                新生儿生活照料：健康数据管理、夜间照料、沐浴、脐带护理、大小便观察、红臀预防和护理、婴儿房间用品清洁。抚触、黄疸、湿疹护理。肠绞痛、胀气护理、宝宝睡眠习惯培养。产妇专业护理：产妇恶露观察以及消毒、母乳喂养指导。产后修复操、绑收腹带。
+              </td>
+              <td>/</td>
+              <td>3～6次</td>
+            </tr>
+            <tr>
+              <td class='pl-td'>二星</td>
+              <td class='money-td'>7800</td>
+              <td class='server-detail-container'>
+                新生儿生活照料：健康数据管理、夜间照料、沐浴、脐带护理、大小便观察、红臀预防和护理、婴儿房间用品清洁。抚触、黄疸、湿疹护理。肠绞痛、胀气护理、宝宝睡眠习惯培养。鹅口疮护理、新生儿常见疾病预防和护理。产妇专业护理：产妇恶露观察以及消毒、母乳喂养指导。产后修复操、绑收腹带。开奶以及乳房护理。
+              </td>
+              <td>催乳</td>
+              <td>6～10次</td>
+            </tr>
+            <tr>
+              <td class='pl-td'>三星</td>
+              <td class='money-td'>8800</td>
+              <td class='server-detail-container'>
+                新生儿生活照料：健康数据管理、夜间照料、沐浴、脐带护理、大小便观察、红臀预防和护理、婴儿房间用品清洁。抚触、黄疸、湿疹护理。肠绞痛、胀气护理、宝宝睡眠习惯培养。鹅口疮护理、新生儿常见疾病预防和护理。意外伤害紧急处理。产妇专业护理：产妇恶露观察以及消毒、母乳喂养指导。产后修复操、绑收腹带。开奶以及乳房护理。生理性涨乳以及回奶，产后康复。
+              </td>
+              <td>催乳/产康</td>
+              <td>10～15次</td>
+            </tr>
+            <tr>
+              <td class='pl-td'>四星</td>
+              <td class='money-td'>9800</td>
+              <td class='server-detail-container'>
+                新生儿生活照料：健康数据管理、夜间照料、沐浴、脐带护理、大小便观察、红臀预防和护理、婴儿房间用品清洁。抚触、黄疸、湿疹护理。肠绞痛、胀气护理、宝宝睡眠习惯培养。鹅口疮护理、新生儿常见疾病预防和护理。意外伤害紧急处理。
+                产妇专业护理：产妇恶露观察以及消毒、母乳喂养指导。产后修复操、绑收腹带。开奶以及乳房护理。生理性涨乳以及回奶。产后康复，催乳以及少奶手法。</td>
+              <td>催乳/产康</td>
+              <td>15～20次</td>
+            </tr>
+            <tr>
+              <td class='pl-td'>五星</td>
+              <td class='money-td'>10800</td>
+              <td class='server-detail-container'>
+                新生儿生活照料：健康数据管理、夜间照料、沐浴、脐带护理、大小便观察、红臀预防和护理、婴儿房间用品清洁。抚触、黄疸、湿疹护理。肠绞痛、胀气护理、宝宝睡眠习惯培养。鹅口疮护理、新生儿常见疾病预防和护理。意外伤害紧急处理。早产儿以及双胞胎护理。
+                产妇专业护理：产妇恶露观察以及消毒、母乳喂养指导。产后修复操、绑收腹带。开奶以及乳房护理。生理性涨乳以及回奶。产后康复，催乳以及少奶手法，乳腺疏通以及乳腺炎的处理。</td>
+              <td>催乳/产康</td>
+              <td>20～25次</td>
+            </tr>
+            <tr>
+              <td>金牌月嫂</td>
+              <td class='money-td'>12800</td>
+              <td class='server-detail-container'>
+                新生儿生活照料：健康数据管理、夜间照料、沐浴、脐带护理、大小便观察、红臀预防和护理、婴儿房间用品清洁。抚触、黄疸、湿疹护理。肠绞痛、胀气护理、宝宝睡眠习惯培养。鹅口疮护理、新生儿常见疾病预防和护理。意外伤害紧急处理。早产儿以及双胞胎护理。
+                离户前育婴护理指导。
+                产妇专业护理：产妇恶露观察以及消毒、母乳喂养指导。产后修复操、绑收腹带。开奶以及乳房护理。生理性涨乳以及回奶。产后康复，催乳以及少奶手法，乳腺疏通以及乳腺炎的处理。产后心理疏导，个性营养配餐。</td>
+              <td>催乳/产康/月子餐</td>
+              <td>30次以上</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <!-- <div class='server-padding-box'> -->
+    <!-- <div class="server-nav">
+          <p class="nav-line"></p>
+          <ul class='server-nav-box'>
+            <li class="nav-title">月嫂培训</li>
+            <li class='active nav-item'>保姆</li>
+            <li class='nav-item'>护工</li>
+            <li class='nav-item'>保洁</li>
+            <li class="nav-title">家政服务</li>
+            <li class='nav-item'>月嫂</li>
+            <li class='nav-item'>催乳师</li>
+            <li class='nav-item'>育婴师</li>
+            <li class="nav-title">高端家政服务</li>
+            <li class='nav-item'>全屋整理</li>
+            <li class='nav-item'>私人订制</li>
+            <li class='nav-item'>涉外家政</li>
+          </ul>
+        </div> -->
+    <!-- <div class="server-content">
+          <div class="server-text-box">
+            <p class="server-title">
+              保姆
+              <span class="title-line"></span>
+            </p>
+            <p class="server-detail">
+              是指能为孕妇、产妇、哺乳期妇女、新生儿不同时期提供生活保健、身体保健、卫生保健等健康管理、保健服务的专业人员。能从保健的角度为孕产妇和新生儿提供常见，熟练掌握母婴护理的基本技能与方法。
+              最新统计数字表明，我国每年有接近2000万新妈妈和新生儿，这些产妇中有40%以上需要聘请星级月嫂的高品质照护，母婴保健市场潜力巨大；
+              据不完全预测，全国需要月嫂800多万人，而现有实际从业人员——保姆，只能提供普通的生活照护，不能满足新妈妈为追求心身保健而指导与服务的高端需 求；
+              在一个中等城市其数量少于5人，95%以上的县级地区专业月嫂数量基本为零，全国母婴保健市场一片空白专业月嫂缺乏，市场需求十分巨大，行业发展后劲无穷。
+              基于此，人力资源和社会保障部中国就业促进会，面向全国开展月嫂职业培训。
+            </p>
+          </div>
+          <div class="server-img" id='serverImg'>
+            <img class='icon-server layui-hide-xs' src="./images/server-detail-icon.png" alt="">
+          </div>
+        </div> -->
+    <!-- </div> -->
   </div>
   <!-- footer -->
   <footer>
@@ -150,17 +351,17 @@
     layui.use(['element', 'jquery'], function () {
       var element = layui.element,
         $ = layui.$
-             //导航切换
-     var btn = $('.mobile-nav').children('button')
-      ,spa = btn.children('span')
-      ,ul = $('.top-box').children('.layui-nav');
-      btn.on('click', function(){
-        if(!$(spa[0]).hasClass('spa1')){
+      //导航切换
+      var btn = $('.mobile-nav').children('button')
+        , spa = btn.children('span')
+        , ul = $('.top-box').children('.layui-nav');
+      btn.on('click', function () {
+        if (!$(spa[0]).hasClass('spa1')) {
           spa[0].className = 'spa1';
           spa[1].style.display = 'none';
           spa[2].className = 'spa3';
           $('.top-box')[0].style.height = 80 + ul[0].offsetHeight + 'px';
-        }else{
+        } else {
           spa[0].className = '';
           spa[1].style.display = 'block';
           spa[2].className = '';
