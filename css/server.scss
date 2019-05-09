@@ -429,7 +429,7 @@ footer {
     padding-top: rem(48);
     box-sizing: border-box;
     &.yuesao{
-      padding-bottom: rem(218);
+      padding-bottom: rem(50);
     }
     .server-detail-title{
       font-size: rem(30);
@@ -439,18 +439,19 @@ footer {
     .yuesao-detail-container{
       box-sizing: border-box;
       background-color: $cff;
-      padding: rem(30) rem(0) rem(52) rem(28);
+      padding: rem(30) rem(0) rem(52) 0;
       max-width: rem(1006);
       width: rem(1006);
       margin: 0 auto;
       .server-detail-title{
-        margin-bottom: rem(65);
+        margin-bottom: rem(35);
       }
       .layui-table{
         color: #333;
         margin: 0 auto;
+        text-align: center;
         .pl-td{
-          padding-left: rem(20);
+          //padding-left: rem(20);
           box-sizing: border-box;
         }
         tbody tr:hover{
@@ -459,9 +460,10 @@ footer {
         th{
           font-size: rem(20);
           padding: 0;
-          &.server-tablie-title{
-            padding-right: rem(33);
-          }
+          text-align: center;
+          // &.server-tablie-title{
+          //   //padding-right: rem(33);
+          // }
         }
         td{
           font-size: rem(20);
@@ -470,16 +472,38 @@ footer {
             color:#A53297;
           }
           &.server-detail-container{
+            text-align: left;
             font-size: rem(14);
             // padding-right: rem(33);
-            padding:rem(28) rem(33) rem(28) 0;
+            padding:rem(28) rem(0) rem(28) 0;
             box-sizing: border-box;
+          }
+        }
+      }
+      .layui-table tr{
+        &.bg-tr{
+          background-color: rgb(252,247,251);
+          &:hover{
+            background-color: rgb(252,247,251);
           }
         }
       }
       .layui-table thead tr{
         background-color: #fff;
+        &.bg-tr{
+          background-color: rgb(252,247,251);
+          th{
+            padding: rem(20) 0;
+          }
+        }
       }
+    }
+    .server-slogan{
+      margin-top: rem(40);
+      text-align: center;
+      color: #A43796;
+      font-size: rem(20);
+      line-height: rem(48);
     }
   }
 }

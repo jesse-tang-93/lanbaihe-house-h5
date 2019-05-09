@@ -495,7 +495,7 @@ footer .layui-breadcrumb a:hover {
 }
 
 .server-container .server-detail-box.yuesao {
-  padding-bottom: 2.18rem;
+  padding-bottom: 0.5rem;
 }
 
 .server-container .server-detail-box .server-detail-title {
@@ -507,23 +507,23 @@ footer .layui-breadcrumb a:hover {
 .server-container .server-detail-box .yuesao-detail-container {
   box-sizing: border-box;
   background-color: #ffffff;
-  padding: 0.3rem 0rem 0.52rem 0.28rem;
+  padding: 0.3rem 0rem 0.52rem 0;
   max-width: 10.06rem;
   width: 10.06rem;
   margin: 0 auto;
 }
 
 .server-container .server-detail-box .yuesao-detail-container .server-detail-title {
-  margin-bottom: 0.65rem;
+  margin-bottom: 0.35rem;
 }
 
 .server-container .server-detail-box .yuesao-detail-container .layui-table {
   color: #333;
   margin: 0 auto;
+  text-align: center;
 }
 
 .server-container .server-detail-box .yuesao-detail-container .layui-table .pl-td {
-  padding-left: 0.2rem;
   box-sizing: border-box;
 }
 
@@ -534,10 +534,7 @@ footer .layui-breadcrumb a:hover {
 .server-container .server-detail-box .yuesao-detail-container .layui-table th {
   font-size: 0.2rem;
   padding: 0;
-}
-
-.server-container .server-detail-box .yuesao-detail-container .layui-table th.server-tablie-title {
-  padding-right: 0.33rem;
+  text-align: center;
 }
 
 .server-container .server-detail-box .yuesao-detail-container .layui-table td {
@@ -550,13 +547,38 @@ footer .layui-breadcrumb a:hover {
 }
 
 .server-container .server-detail-box .yuesao-detail-container .layui-table td.server-detail-container {
+  text-align: left;
   font-size: 0.14rem;
-  padding: 0.28rem 0.33rem 0.28rem 0;
+  padding: 0.28rem 0rem 0.28rem 0;
   box-sizing: border-box;
+}
+
+.server-container .server-detail-box .yuesao-detail-container .layui-table tr.bg-tr {
+  background-color: #fcf7fb;
+}
+
+.server-container .server-detail-box .yuesao-detail-container .layui-table tr.bg-tr:hover {
+  background-color: #fcf7fb;
 }
 
 .server-container .server-detail-box .yuesao-detail-container .layui-table thead tr {
   background-color: #fff;
+}
+
+.server-container .server-detail-box .yuesao-detail-container .layui-table thead tr.bg-tr {
+  background-color: #fcf7fb;
+}
+
+.server-container .server-detail-box .yuesao-detail-container .layui-table thead tr.bg-tr th {
+  padding: 0.2rem 0;
+}
+
+.server-container .server-detail-box .server-slogan {
+  margin-top: 0.4rem;
+  text-align: center;
+  color: #A43796;
+  font-size: 0.2rem;
+  line-height: 0.48rem;
 }
 
 .server-detail-box.hg .hg-detail-container {
