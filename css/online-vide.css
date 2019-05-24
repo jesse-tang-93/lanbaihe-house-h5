@@ -1,0 +1,211 @@
+.fr {
+  float: right;
+}
+
+.fl {
+  float: left;
+}
+
+html {
+  font-size: 80px;
+}
+
+body {
+  padding-top: 1.5rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+.top-box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: #ffffff;
+}
+
+.top-box .top-tips-nav {
+  max-width: 13.66rem;
+  padding: 0 1.6rem;
+  line-height: 0.38rem;
+  width: 13.66rem;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.top-box .top-tips-nav .hello-text {
+  color: #7f2974;
+  font-size: 0.14rem;
+  font-weight: 500;
+  letter-spacing: 0.012rem;
+}
+
+.top-box .top-tips-nav .tip-nav {
+  background-color: #fff;
+  padding: 0;
+}
+
+.top-box .top-tips-nav .tip-nav .layui-nav-bar {
+  background-color: transparent;
+}
+
+.top-box .top-tips-nav .tip-nav .layui-nav-item {
+  line-height: inherit;
+}
+
+.top-box .top-tips-nav .tip-nav .layui-nav-item a {
+  color: #999999;
+  font-size: inherit;
+  font-size: inherit;
+  padding: 0;
+  margin-right: 0.33rem;
+}
+
+.top-box .top-tips-nav .tip-nav .layui-nav-item.end-item a {
+  margin-right: 0;
+}
+
+.top-box .top-line {
+  height: 0.02rem;
+  background-color: #7f2974;
+  margin: 0;
+  padding: 0;
+}
+
+.top-box .top-icon-box {
+  width: 13.66rem;
+  font-size: 0;
+  max-width: 13.66rem;
+  margin: 0 auto;
+  padding: 0.1rem 0 0 1.69rem;
+  box-sizing: border-box;
+}
+
+.top-box .top-icon-box .box-style {
+  display: inline-block;
+  color: #666666;
+  font-size: 0;
+}
+
+.top-box .top-icon-box .box-style ul {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.top-box .top-icon-box .box-style ul li {
+  font-family: PingFangSC-Regular;
+  font-size: 0.14rem;
+}
+
+.top-box .top-icon-box .tel-info-box img {
+  display: inline-block;
+  width: 0.45rem;
+  height: 0.32rem;
+  margin-right: 0.1rem;
+  vertical-align: middle;
+}
+
+.top-box .logo {
+  width: 0.5rem;
+  height: 0.5rem;
+  display: inline-block;
+  margin-left: 2.38rem;
+  margin-right: 3.04rem;
+}
+
+.top-box .local-info-box img {
+  width: 0.34rem;
+  height: 0.4rem;
+  margin-right: 0.1rem;
+}
+
+.top-box .nav-box {
+  max-width: 13.66rem;
+  margin: 0 auto;
+  color: #303030;
+  background-color: #ffffff;
+  padding: 0 1.7rem;
+}
+
+.top-box .nav-box .layui-nav-bar {
+  background-color: transparent;
+}
+
+.top-box .nav-box .layui-nav-item {
+  line-height: 0.5rem;
+}
+
+.top-box .nav-box .layui-nav-item.active a {
+  color: #7f2974;
+}
+
+.top-box .nav-box .layui-nav-item a {
+  color: initial;
+  font-size: 0.18rem;
+  padding: 0;
+  margin-right: 0.93rem;
+}
+
+.top-box .nav-box .layui-nav-item.end-item a {
+  margin-right: 0;
+}
+
+.server-banner-box {
+  height: 2rem;
+  position: relative;
+  color: #ffffff;
+  text-align: center;
+  background: url("../images/server-banner.png") center no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.server-banner-box span {
+  font-size: 0.2rem;
+}
+
+.server-banner-box p {
+  font-size: 0.36rem;
+}
+
+footer {
+  padding-top: 0.6rem;
+  text-align: center;
+  padding-bottom: 0.6rem;
+}
+
+footer .bottom-title {
+  margin: 0 auto;
+  display: block;
+  width: 3.57rem;
+  height: 1.98rem;
+  object-fit: contain;
+}
+
+footer p {
+  margin: 0.5rem auto 0.1rem;
+}
+
+footer p,
+footer .bottom-nav span a {
+  color: #aaa;
+}
+
+footer .layui-breadcrumb a:hover {
+  color: #7f2974 !important;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1385px) {
+  .top-box .nav-box .layui-nav-item a {
+    margin-right: 0.88rem;
+  }
+  .server-container .server-nav {
+    margin-right: 0.3rem;
+  }
+}
