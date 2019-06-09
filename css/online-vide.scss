@@ -142,7 +142,7 @@ img {
   position: relative;
   color: $cff;
   text-align: center;
-  background: url('../images/server-banner.png') center no-repeat;
+  background: url('../images/us-banner.png') center no-repeat;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -184,5 +184,66 @@ footer {
   }
   .server-container .server-nav{
     margin-right: rem(30);
+  }
+}
+
+.online-video-container{
+  max-width: rem(1046);
+  margin: 0 auto;
+  .video-active-box{
+    p.video-active-title{
+      color: #111111;
+      font-size: rem(30);
+      line-height: rem(26);
+      padding-top: rem(50);
+      font-weight:500;
+      padding-bottom: rem(29);
+    }
+    p.active-video-uptime{
+      padding-left: rem(1);
+      color: #999999;
+      font-size: rem(18);
+      padding-bottom: rem(27);
+    }
+    .video-active-content{
+      height: rem(598);
+    }
+  }
+  .more-video-box{
+    p.more-title{
+      font-size: rem(30);
+      color:#333333;
+        padding: rem(30) 0;
+    }
+    .more-video-content{
+      text-align: center;
+      margin-bottom: rem(17);
+      div.more-item{
+        padding-bottom: rem(14);
+        font-size: 0;
+        box-shadow:0px rem(6) rem(20) 0px rgba(222,222,222,0.4);
+        display:inline-block;
+        width: rem(234);
+        margin-bottom: rem(34);
+        margin-right: rem(30);
+        img{
+          height: rem(152);
+        }
+        p.more-item-text{
+          padding: rem(12) rem(16) rem(0);
+          font-size: rem(16);
+          color: #333333;
+          text-align: left;
+          overflow : hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 2; // 这里修改为要显示的行数
+          -webkit-box-orient: vertical;
+        }
+        &:nth-child(4n+0){
+          margin-right: 0;
+        }
+      }
+    }
   }
 }
